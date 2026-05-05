@@ -1,0 +1,2183 @@
+Metadata:
+  Identification_Information:
+    Citation:
+      Citation_Information:
+        Originator: Frederic H. Wilson
+        Originator: Keith Labay
+        Originator: Nora Shew
+        Originator: Chad P. Hults
+        Publication_Date: 2015
+        Title: Geologic map of Alaska
+        Geospatial_Data_Presentation_Form: Vector Digital Data Set (Polygon)
+        Online_Linkage: http://dx.doi.org/10.3133/sim3340
+        Online_Linkage: http://pubs.usgs.gov/sim/3340
+        Larger_Work_Citation:
+          Citation_Information:
+            Originator: Frederic H. Wilson
+            Originator: Chad P. Hults
+            Originator: Charles G. Mull
+            Originator: Susan M. Karl
+            Publication_Date: 2015
+            Title: Geologic map of Alaska
+            Edition: 1.0
+            Geospatial_Data_Presentation_Form: Vector Digital Data Set
+            Series_Information:
+              Series_Name: US Geological Survey Scientific Investigations Map
+              Issue_Identification: SIM 3340
+            Online_Linkage: http://dx.doi.org/10.3133/sim3340
+            Online_Linkage: http://pubs.usgs.gov/sim/3340
+    Description:
+      Abstract:
+        Digital compilation and reinterpretation of published and unpublished
+        geologic mapping of Alaska.
+      Purpose:
+        This data set represents part of a systematic effort to release geologic
+        map data for the United States in a uniform manner.  Geologic data in
+        this data set has been compiled from a wide variety of sources,
+        published and unpublished, ranging from state and regional geologic
+        map to field mapping.
+    Time_Period_of_Content:
+      Time_Period_Information:
+        Single_Date/Time:
+          Calendar_Date: 2015
+      Currentness_Reference: publication date
+    Status:
+      Progress: In work
+      Maintenance_and_Update_Frequency: Unknown
+    Spatial_Domain:
+      Bounding_Coordinates:
+        West_Bounding_Coordinate: 172.0
+        East_Bounding_Coordinate: -130.0
+        North_Bounding_Coordinate: 72.0
+        South_Bounding_Coordinate: 51.2
+    Keywords:
+      Theme:
+        Theme_Keyword_Thesaurus: None
+        Theme_Keyword: geology
+      Place:
+        Place_Keyword_Thesaurus: None
+        Place_Keyword: Alaska
+    Access_Constraints: None
+    Use_Constraints:
+      None. Users are advised to read the data set's metadata thoroughly
+      to understand appropriate use and data limitations.  Acknowledgment
+      of the U.S. Geological Survey would be appreciated in products derived
+      from these data.
+    Point_of_Contact:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: U.S. Geological Survey, Alaska Science Center
+          Contact_Person: Frederic H. Wilson
+        Contact_Position: Research Geologist
+        Contact_Address:
+          Address_Type: mailing address
+          Address: 4210 University Drive
+          City: Anchorage
+          State_or_Province: AK
+          Postal_Code: 99508-4626
+          Country: US
+        Contact_Voice_Telephone: 907-786-7448
+        Contact_Electronic_Mail_Address: fwilson@usgs.gov
+    Native_Data_Set_Environment:
+      Environment as of Metadata Creation: Microsoft Windows 7 Version 6.1
+      (Build 7601) Service Pack 1; ESRI ArcCatalog 10.2 (Build 3552)
+      Service Pack [N/A] (Build [N/A])
+  Data_Quality_Information:
+    Attribute_Accuracy:
+      Attribute_Accuracy_Report:
+        Many types of source materials of varying scales were used to compile
+        this data set.  Sources include previously published maps, unpublished
+        mapping, and air photo interpretation, and reflects more than a century
+        of work in Alaska.  Vector features were mostly digitized either by
+        digitizing on screen or on a large format digitizing tablet.  Vectors and
+        polygons were attributed and checked.  Topology rules were checked.
+    Logical_Consistency_Report:
+      The geologic data consists of attributed arcs and polygons.  Each
+      polygon has a coded attribute designating the mapped geologic unit.
+      Faults, stratigraphic contacts, dikes, lineations and other linear features
+      are represented as arcs.  When a fault is also a stratigraphic contact,
+      only a single arc is present.  Dangling arcs may be present (fault, dike,
+      lineation, etc.).
+    Completeness_Report:
+      The data set AKStategeol.gdb consists of arc, polygon, and point
+      features depicting the geology of Alaska in both detailed and
+      generalized versions.  The detailed state map geologic units are
+      described in the Description of Map Units (DMU) found in the
+      accompanying pamphlet.  The features for the generalized version
+      were derived from the detailed features; the generalized version is
+      used for the printed version of the state map.  A separate metadata
+      file is provided for the generalized version.  The AKStategeol.gdb
+      also includes many tables which contain additional information and
+      can be linked to either the arc or polygon features.  The information
+      in the tables were derived from a set of related Filemaker databases
+      which contain additional information.  The native Filemaker
+      database files and a stand-alone Filemaker_Runtime file, along with
+      CSV and DBF files are provided with this publication.  The features
+      in AKStategeol.gdb are also provided as shapefiles.
+    Positional_Accuracy:
+      Horizontal_Positional_Accuracy:
+        Horizontal_Positional_Accuracy_Report: Data is presented for use at a nominal scale of 1:250,000.
+      Vertical_Positional_Accuracy:
+        Vertical_Positional_Accuracy_Report: not applicable.
+    Lineage:
+      Process_Step:
+        Process_Description:
+          The geology for each of the 153 1:250,000 scale quadrangles in
+          Alaska was compiled from many different sources.  Data capture has
+          been ongoing since 1995.  Linework was hand digitized from materials
+          of various media and scale.  The arcs and polygons were attributed,
+          and topology was checked.  Data is archived as ARC/Info coverages.
+        Process_Date: Unknown
+      Process_Step:
+        Process_Description:
+          The geology data from the 153 quadrangle coverages were
+          combined to create the detailed map feature classes in
+          AKStatewidegeol.gdb
+        Process_Date: 2015
+  Spatial_Data_Organization_Information:
+    Direct_Spatial_Reference_Method: Vector
+    Point_and_Vector_Object_Information:
+      SDTS_Terms_Description:
+        SDTS_Point_and_Vector_Object_Type: G-polygon
+        Point_and_Vector_Object_Count: 245562
+  Spatial_Reference_Information:
+    Horizontal_Coordinate_System_Definition:
+      Planar:
+        Map_Projection:
+          Map_Projection_Name: NAD 1983 Alaska Albers (ESRI Full Name: NAD_1983_Alaska_Albers)
+          Albers_Conical_Equal_Area:
+            Standard_Parallel: 55.0
+            Standard_Parallel: 65.0
+            Longitude_of_Central_Meridian: -154.0
+            Latitude_of_Projection_Origin: 50.0
+            False_Easting: 0.0
+            False_Northing: 0.0
+        Planar_Coordinate_Information:
+          Planar_Coordinate_Encoding_Method: coordinate pair
+          Coordinate_Representation:
+            Abscissa_Resolution: 0.6096
+            Ordinate_Resolution: 0.6096
+          Planar_Distance_Units: Meter
+      Geodetic_Model:
+        Horizontal_Datum_Name: D_North_American_1983
+        Ellipsoid_Name: GRS_1980
+        Semi-major_Axis: 6378137.0
+        Denominator_of_Flattening_Ratio: 298.257222101
+  Entity_and_Attribute_Information:
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: AKStategeol_poly
+        Entity_Type_Definition:
+          Characteristics of the geologic unit are coded in the polygon attribute
+          table. The table includes the following items:  CLASS, QCLASS,
+          SOURCE, NSACLASS, NSASUB, NSAMOD, SOURCECLASS,
+          STATE_SYMBOL, STATE_LABEL, STATE_LABEL2,
+          STATE_UNITNAME, AGE_RANGE, and SEQUENCE.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: CLASS
+        Attribute_Definition:
+          Unique numeric code assigned to a geologic unit from an original
+          source map.  Number is unique only within a given quadrangle and
+          specific to SOURCE.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsaunits (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: QCLASS
+        Attribute_Definition:
+          Subdivision of attribute NSACLASS providing more detailed Quaternary
+          classification.  Field QCLASS is a key field for linking to field QCLASS
+          in table nsaqkey.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsaunits (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: SOURCE
+        Attribute_Definition:
+          Unique code assigned to each source; uses the 2-letter quadrangle
+          code and a three digit number.  By default, 001 is reserved for the
+          topographic map or other source of hydrologic spatial data for each
+          quadrangle.  Field SOURCE is a key field and links to SOURCE in
+          table nsarefs.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsarefs (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: NSACLASS
+        Attribute_Definition:
+          Regional numeric code assigned to similar geologic units.  Field
+          NSACLASS is a key field and links to field NSACLASS in tables
+          nsaage, nsakey, nsalith, nsarefs, and nsasetting.  NSACLASS is also
+          a 1:many relationship with NSACLASS in table nsaunits.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsakey (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: NSASUB
+        Attribute_Definition:
+          Same coding as NSACLASS, but used to define the bedrock
+          unit beneath surficial deposits.  Not universally populated.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsakey (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: NSAMOD
+        Attribute_Definition:
+          Indicates if a geologic unit is altered, contact metamorphosed, or has
+          a queried unit assignment.  Some maps show contact metamorphosed
+          areas as separate units; these units are assigned a NSACLASS for the
+          appropriate protolith and have 'HFS' selected as NSAMOD value.
+          If only a few polygons of a geologic unit are altered or contact
+          metamorphosed, then the NSAMOD value is set for those polygons
+          only.  Queried units, Tk? versus Tk for example, have the same
+          NSACLASS, but Tk? will have NSAMOD = 'Q'.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: {Null Value / Empty Field Entry}
+            Enumerated_Domain_Value_Definition: Unit is not altered, contact metamorphosed, or queried.
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ALT
+            Enumerated_Domain_Value_Definition: Hydrothermally altered, nonspecific
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ALT, Q
+            Enumerated_Domain_Value_Definition: Hydrothermally altered, nonspecific, and queried(?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ALT-SER
+            Enumerated_Domain_Value_Definition: Sericitic alteration
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: HFS
+            Enumerated_Domain_Value_Definition: Contact metamorphism, nonspecific
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: HFS, Q
+            Enumerated_Domain_Value_Definition: Contact metamorphism, nonspecific, and queried
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Q
+            Enumerated_Domain_Value_Definition: Queried (?) geologic unit
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: SOURCECLASS
+        Attribute_Definition:
+          Concatenated field that uniquely identifies a given source map (SOURCE)
+          and geologic unit (CLASS).  Field SOURCECLASS is a key field that
+          links to field SOURCE_CLASS in table nsaunits.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsaunits (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: STATE_SYMBOL
+        Attribute_Definition:
+          Number defining symbol color in WPGCMYKG.style for ArcGIS to
+          display the detailed digital geologic map in AKStategeol.mxd.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 992
+      Attribute:
+        Attribute_Label: STATE_LABEL
+        Attribute_Definition:
+          Same as STATE_LABEL2 but uses special characters for using
+          FGDCGeoAge font to display the symbols for geologic time periods.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain:
+            } represents Mesozoic; ^  Triassic; | Paleozoic; * Pennsylvanian;
+            _ Cambrian; = preCambrian; and < Proterozoic.
+      Attribute:
+        Attribute_Label: STATE_LABEL2
+        Attribute_Definition:
+          Geologic unit label used in the Description of Map Units and detailed
+          version of the state map.  Label is in standard text font and does not
+          use special characters.  Px is used for Proterozoic and IP for
+          Pennsylvanian.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              gen_state_link (provided as Filemaker database, Filemaker runtime,
+              CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: STATE_UNITNAME
+        Attribute_Definition: Unit name as used in the Description of Map Units
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              gen_state_link (provided as Filemaker database, Filemaker runtime, and
+              CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: AGE_RANGE
+        Attribute_Definition:
+          Age range of the map unit in the Description of Map Units, does
+          not necessarily match the units on the printed generalized map.
+          The combining of DMU units for the generalized map may have created
+          longer time intervals for the units.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain:
+            Describes the geologic age interval of the geologic unit as used
+            in the Description of Map Units (DMU).  Information obtained from
+            gen_state_link (provided as Filemaker databse, Filemaker runtime,
+            and CSV and DBF files)
+      Attribute:
+        Attribute_Label: SEQUENCE
+        Attribute_Definition:
+          A sorting code using a letter for lithologic type and then a number.
+          Used to place the unit in age order.  Matches the order given in the
+          Description of Map Units.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain:
+            A is unconsolidated units; B is sedimentary rocks; C is volcanic rocks;
+            D is plutonic rocks, E is metamorphic rocks, and F is tectonic units or
+            assemblages.
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: AKStategeol_arc
+        Entity_Type_Definition:
+          Characteristics of linear features, which include various types of
+          faults, stratigraphic contacts, and other line types.  Lineations and
+          dikes are stored in separate feature classes, but contain similar
+          attributes.  Items in AKStategeol_arc include the following items:
+          ARC_CODE, ARC_PARA1, SOURCE, LINEID, LINE_TYPE,
+          LEFT_LABEL, and RIGHT_LABEL.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: ARC_CODE
+        Attribute_Definition:
+          ARC_CODE is a positive integer value in the arc attribute table.  Values
+          range discontinuously from 0 to 99.  Values match one-for-one with
+          LINE_TYPE.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 1
+            Enumerated_Domain_Value_Definition: Stratigraphic contact; location certain
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 2
+            Enumerated_Domain_Value_Definition: Stratigraphic contact; location approximate
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 3
+            Enumerated_Domain_Value_Definition: Stratigraphic contact; inferred; queried
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 4
+            Enumerated_Domain_Value_Definition:
+              Normal fault; location certain; if arc-para1 = 1, then upthrown side is on
+              right-hand side
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 5
+            Enumerated_Domain_Value_Definition:
+              Normal fault; location approximate; if arc-para1 = 1, then upthrown
+              side is on right-hand side
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 6
+            Enumerated_Domain_Value_Definition:
+              Normal fault; location inferred, queried; if arc-para1 = 1, then upthrown side
+              is on right-hand side
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 7
+            Enumerated_Domain_Value_Definition:
+              Shoreline or riverbank; arc-para1 = 1 designates single-sided
+              stream, typically used in areas of braiding
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 8
+            Enumerated_Domain_Value_Definition: Internal contact or phase change in the source map.
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 9
+            Enumerated_Domain_Value_Definition: Boundary of altered zone or hornfels
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 10
+            Enumerated_Domain_Value_Definition:
+              Thrust fault; location certain; teeth on right from origin.
+              ARC_PARA1 is dip of the fault plane, if known.  A negative
+              number indicates overturned fault.
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 11
+            Enumerated_Domain_Value_Definition:
+              Thrust fault; location approximate; teeth on right from origin.
+              ARC_PARA1 is dip of the fault plane, if known.  A negative
+              number indicates overturned fault.
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 12
+            Enumerated_Domain_Value_Definition: Thrust fault; location inferred, queried; teeth on right from origin
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 13
+            Enumerated_Domain_Value_Definition: Moraine or till margin (scour) on bedrock
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 14
+            Enumerated_Domain_Value_Definition: Caldera or crater rim
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 15
+            Enumerated_Domain_Value_Definition: Ice contact (glacier limit)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 18
+            Enumerated_Domain_Value_Definition: Internal contact
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 19
+            Enumerated_Domain_Value_Definition:
+              Moraine limit having tics on right side from origin.  ARC_PARA1 = 1
+              indicates the moraine is submerged.
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 28
+            Enumerated_Domain_Value_Definition: Caldera or crater rim, inferred or concealed
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 30
+            Enumerated_Domain_Value_Definition: Fault with unknown offset; location certain
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 31
+            Enumerated_Domain_Value_Definition: Fault with unknown offset; location approximate
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 32
+            Enumerated_Domain_Value_Definition: Fault with unknown offset; location inferred
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 34
+            Enumerated_Domain_Value_Definition:
+              Terrace, erosional, or wave-cut scarp; digitize with water on right
+              from origin
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 35
+            Enumerated_Domain_Value_Definition:
+              High-angle reverse fault; certain location; teeth on right from origin;
+              arc-para1 is angle of thrusting, if known
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 36
+            Enumerated_Domain_Value_Definition:
+              High-angle reverse fault; certain approximate; teeth on right from origin;
+              arc-para1 is angle of thrusting, if known
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 37
+            Enumerated_Domain_Value_Definition:
+              High-angle reverse fault; certain inferred; teeth on right from origin;
+              arc-para1 is angle of thrusting, if known
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 48
+            Enumerated_Domain_Value_Definition: Moraine crest
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 50
+            Enumerated_Domain_Value_Definition: Dikes and sills (used in feature class AKStategeol_dike)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 51
+            Enumerated_Domain_Value_Definition: Concealed contact
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 52
+            Enumerated_Domain_Value_Definition:
+              Concealed normal fault; if arc-para1 = 1, then upthrown side is on
+              right-hand side
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 53
+            Enumerated_Domain_Value_Definition:
+              Concealed thrust fault; teeth on right from origin.  ARC_PARA1 is
+              dip of the fault plane, if known.  A negative number indicates
+              overturned fault.
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 54
+            Enumerated_Domain_Value_Definition: Concealed high-angle reverse fault
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 55
+            Enumerated_Domain_Value_Definition: Concealed normal fault having right lateral oblique slip
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 56
+            Enumerated_Domain_Value_Definition: Concealed normal fault having left lateral oblique slip
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 57
+            Enumerated_Domain_Value_Definition: Concealed right lateral fault
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 58
+            Enumerated_Domain_Value_Definition: Concealed left lateral fault
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 59
+            Enumerated_Domain_Value_Definition: Concealed shear zone
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 60
+            Enumerated_Domain_Value_Definition: Concealed fault with unknown offset
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 71
+            Enumerated_Domain_Value_Definition:
+              Normal fault; location certain; having right lateral oblique slip; if
+              arc-para1 = 1, then upthrown side is on right-hand side
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 72
+            Enumerated_Domain_Value_Definition:
+              Normal fault; location approximate; having right lateral oblique slip; if
+              arc-para1 = 1, then upthrown side is on right-hand side
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 73
+            Enumerated_Domain_Value_Definition:
+              Normal fault; location certain; having left lateral oblique slip; if
+              arc-para1 = 1, then upthrown side is on right-hand side
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 74
+            Enumerated_Domain_Value_Definition:
+              Normal fault; location approximate; having left lateral oblique slip; if
+              arc-para1 = 1, then upthrown side is on right-hand side
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 75
+            Enumerated_Domain_Value_Definition:
+              Normal fault; location inferred or queried; having left lateral oblique slip; if
+              arc-para1 = 1, then upthrown side is on right-hand side
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 76
+            Enumerated_Domain_Value_Definition:
+              Normal fault; location inferred or queried; having right lateral oblique slip; if
+              arc-para1 = 1, then upthrown side is on right-hand side
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 87
+            Enumerated_Domain_Value_Definition: Right lateral fault; location certain
+            Enumerated_Domain_Value_Definition_Source: this data
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 88
+            Enumerated_Domain_Value_Definition: Right lateral fault; location approximate
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 89
+            Enumerated_Domain_Value_Definition: Right lateral fault; location inferred, queried
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 90
+            Enumerated_Domain_Value_Definition: Left lateral fault; location certain
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 91
+            Enumerated_Domain_Value_Definition: Left lateral fault; location approximate
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 92
+            Enumerated_Domain_Value_Definition: Left lateral fault; location inferred, queried
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 94
+            Enumerated_Domain_Value_Definition: Shear zone, location certain
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 96
+            Enumerated_Domain_Value_Definition: Shear zone; location inferred
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 97
+            Enumerated_Domain_Value_Definition:
+              Scratch line used where polygon on source map was not closed, or
+              limit of mapping
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 98
+            Enumerated_Domain_Value_Definition: International border
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 99
+            Enumerated_Domain_Value_Definition: Bounding neat line of 1:250,000 scale quadrangle
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: ARC_PARA1
+        Attribute_Definition: Used as a modifier for ARC_CODE
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: See ARC_CODE attribute definitions for ARC_PARA1 definition
+      Attribute:
+        Attribute_Label: SOURCE
+        Attribute_Definition:
+          Unique code assigned to each source; uses the 2-letter quadrangle
+          code and a three digit number.  By default, 001 is reserved for the
+          topographic map or other source of hydrologic spatial data for each
+          quadrangle.  Field SOURCE is a key field for linking to field SOURCE
+          in table nsarefs.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsarefs (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: LINEID
+        Attribute_Definition:
+          LINEID provides additional attributes for some faults and glacial moraines.
+          For faults, LINEID identifies the fault system the feature belongs to.  For
+          moraines, LINEID identifies the moraine or glacial limit.  LINEID is an 8 character
+          alpha-numeric code following this naming convention.  The first letter is
+          'f' if the feature is a fault, or 'm' if a moraine.  The second and third characters are
+          alpha abbreviations for the fault system, region, or glaciation.  These abbreviations
+          are defined below.  The final 4 numbers in LINEID are identifiers
+          which further subdivide the line's description.  Field LINEID is a key
+          field for linking to field LINEID in table LINEID.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fBR
+            Enumerated_Domain_Value_Definition: Border Ranges fault system
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fCH
+            Enumerated_Domain_Value_Definition: faults in the Chugach Mountains region
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fCS
+            Enumerated_Domain_Value_Definition: Coast Mountains orogen
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fDE
+            Enumerated_Domain_Value_Definition: Denali fault system
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fFW
+            Enumerated_Domain_Value_Definition: Fairweather-Chugach-Ragged Mountain fault system
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fKB
+            Enumerated_Domain_Value_Definition: Kobuk fault system
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fKG
+            Enumerated_Domain_Value_Definition: Kugruk
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fKT
+            Enumerated_Domain_Value_Definition: Kaltag fault system
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fLA
+            Enumerated_Domain_Value_Definition: Laurentia region, Kandik River area of Alaska
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fLG
+            Enumerated_Domain_Value_Definition: Livengood region
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fNA
+            Enumerated_Domain_Value_Definition: Brooks Range region
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fTC
+            Enumerated_Domain_Value_Definition: Tikchik-Susitna region
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fTI
+            Enumerated_Domain_Value_Definition: Tintina fault system
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fTK
+            Enumerated_Domain_Value_Definition: Talkeetna suture zone
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fWR
+            Enumerated_Domain_Value_Definition: Wrangellia region
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fYA
+            Enumerated_Domain_Value_Definition:
+              faults in the Yakutat block region, south of the Fairweather-Chugach-Ragged
+              Mountain fault system
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fYK
+            Enumerated_Domain_Value_Definition: Yukon-Kuskokwim region
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: fYT
+            Enumerated_Domain_Value_Definition: Yukon-Tanana region
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: hide
+            Enumerated_Domain_Value_Definition:
+              used for symbolizing small scale maps; identifies faults not to be drawn
+              in areas of high density
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: hide2
+            Enumerated_Domain_Value_Definition:
+              same as 'hide' but feature to be drawn as ARC_CODE = 2 if map is
+              to show contacts.
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: mLW
+            Enumerated_Domain_Value_Definition: Late Wisconsin glaciation
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: LEFT_LABEL
+        Attribute_Definition: Geologic unit on the left side of the line feature.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: See polygon attribute STATE_LABEL2.
+      Attribute:
+        Attribute_Label: RIGHT_LABEL
+        Attribute_Definition: Geologic unit on the right side of the line feature.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: See polygon attribute STATE_LABEL2.
+      Attribute:
+        Attribute_Label: LINE_TYPE
+        Attribute_Definition: Descriptive name for ARC_CODE
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Brief description of ARC_CODE
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: AKStategeol_dike
+        Entity_Type_Definition: Line features representing dikes and sills
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: ARC_CODE
+        Attribute_Definition: same as attribute ARC_CODE in AKStategeol_arc feature class
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 50
+            Enumerated_Domain_Value_Definition: Dikes and sills
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: SOURCE
+        Attribute_Definition:
+          Unique code assigned to each source; uses the 2-letter quadrangle
+          code and a three digit number.  Same as attribute SOURCE in
+          AKStategeol_arc and AKStategeol_poly.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsarefs (available as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: CLASS
+        Attribute_Definition:
+          Unique numeric code assigned to a geologic unit from the original
+          source map.  Number is unique only within a given quadrangle and
+          specific to SOURCE.  Not universally populated.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsaunits (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: NSACLASS
+        Attribute_Definition:
+          Regional numeric code assigned to similar units.  Not universally
+          populated.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsakey (provided as a geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: LINE_TYPE
+        Attribute_Definition: Descriptive name for ARC_CODE
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Dikes and sills
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: AKStategeol_lineament
+        Entity_Type_Definition: Line features representing lineaments
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: ARC_CODE
+        Attribute_Definition: same as attribute ARC_CODE in AKStategeol_arc feature class
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: All lineaments have ARC_CODE = 93
+      Attribute:
+        Attribute_Label: SOURCE
+        Attribute_Definition:
+          Unique code assigned to each source; uses the 2-letter quadrangle
+          code and a three digit number.  Same as attribute SOURCE in
+          AKStategeol_arc and AKStategeol_poly.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsarefs (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: LINE_TYPE
+        Attribute_Definition: Descriptive name for ARC_CODE
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Lineament
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: lineid
+        Entity_Type_Definition:
+          lineid is a table in AKStategeol.gdb containing additional information
+          about some faults and moraines.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: LINEID
+        Attribute_Definition:
+          LINEID provides additional attributes for some faults and moraines.
+          LINEID is the keyfield for linking to AKStategeol_arc.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain:
+            Describes fault system or region this feature is found.  See
+            description of LINEID for AKStategeol_arc.
+      Attribute:
+        Attribute_Label: LINE_NAME
+        Attribute_Definition: Descriptive name of fault system, region, or moraine
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Descriptive name of fault system, region, or moraine
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: nsaage
+        Entity_Type_Definition:
+          Table containing geologic age information for each unique NSACLASS
+          value.  Provides composite maximum and minimum age assignments
+          for a given NSACLASS.  A modified version of International Union of
+          Geological Sciences (IUGS) International Chronostratigraphic Chart
+          or radiometric dating were used to determine age attributes.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: NSACLASS
+        Attribute_Definition: key field to link to AKStategeol_poly
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsakey (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: MIN_MA
+        Attribute_Definition:
+          Minimum age in millions of years, determined either from IUGS or
+          radiometric dating.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 1600
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: MAX_MA
+        Attribute_Definition:
+          Maximum age in millions of years, determined either from IUGS or
+          radiometric dating.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0.0117
+            Range_Domain_Maximum: 2500
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: TYPE
+        Attribute_Definition:
+          Defines whether the age assignment is relative, if based on
+          stratigraphic position, or absolute, if based on radiometric dating.
+          The default value is 'Relative'.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Absolute
+            Enumerated_Domain_Value_Definition: Age assignment is based on radiometric dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Relative
+            Enumerated_Domain_Value_Definition: Age assignment is based on stratigraphic position.  Default value.
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: AGE_COM
+        Attribute_Definition: Age_comments
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Free text
+      Attribute:
+        Attribute_Label: MIN_EON
+        Attribute_Definition:
+          The minimum or youngest age assignment for the eon of the unit,
+          based on geologic interpretation.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: MIN_ERA
+        Attribute_Definition:
+          The minimum or youngest age assignment for the era of the unit,
+          based on geologic interpretation.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: MIN_PERIOD
+        Attribute_Definition:
+          The minimum or youngest age assignment for the period of the unit,
+          based on geologic interpretation.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: MIN_EPOCH
+        Attribute_Definition:
+          The minimum or youngest age assignment for the epoch of the unit,
+          based on geologic interpretation.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: MIN_AGE
+        Attribute_Definition:
+          The minimum or youngest age assignment for the age of the unit,
+          based on geologic interpretation.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: MAX_EON
+        Attribute_Definition:
+          The maximum or oldest age assignment for the eon of the unit,
+          based on geologic interpretation.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: MAX_ERA
+        Attribute_Definition:
+          The maximum or oldest age assignment for the era of the unit,
+          based on geologic interpretation.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: MAX_PERIOD
+        Attribute_Definition:
+          The maximum or oldest age assignment for the period of the unit,
+          based on geologic interpretation.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: MAX_EPOCH
+        Attribute_Definition:
+          The maximum or oldest age assignment for the epoch of the unit,
+          based on geologic interpretation.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: MAX_AGE
+        Attribute_Definition:
+          The maximum or oldest age assignment for the age of the unit,
+          based on geologic interpretation.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: FULL_MIN
+        Attribute_Definition:
+          Concatenation of fields MIN_EON, MIN_ERA, MIN_PERIOD, MIN_EPOCH,
+          and MIN_AGE.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: CMIN_AGE
+        Attribute_Definition: The most precise minimum age coded; derived from FULL_MIN field.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: FULL_MAX
+        Attribute_Definition:
+          Concatenation of fields MAX_EON, MAX_ERA, MAX_PERIOD, MAX_EPOCH,
+          and MAX_AGE.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+      Attribute:
+        Attribute_Label: CMAX_AGE
+        Attribute_Definition: The most precise maximum age coded; derived from FULL_MAX field.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: International Chronostratigraphic Chart
+            Codeset_Source: IUGS
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: nsakey
+        Entity_Type_Definition:
+          Table containing labels and colors applied to the map.  The table also
+          includes a brief description of the geologic unit.  Key field is NSACLASS.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: REC_NO
+        Attribute_Definition: unique numeric identifier
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 1461
+      Attribute:
+        Attribute_Label: SYMBOL
+        Attribute_Definition:
+          Symbol number for wpgcmykg.style; used for symbolizing polygons
+          for the detailed state geologic map; based on NSACLASS
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 995
+      Attribute:
+        Attribute_Label: NSACLASS
+        Attribute_Definition: Regional numeric code assigned to similar units.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 90
+            Range_Domain_Maximum: 20000
+      Attribute:
+        Attribute_Label: LABEL
+        Attribute_Definition:
+          Map labels used for regional maps, which may be different from
+          the generalized and/or detailed state maps.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: DESCRIPTION
+        Attribute_Definition:
+          Brief summary of the regional geologic unit, which may be different from
+          the generalized and/or detailed state maps.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: nsalith
+        Entity_Type_Definition:
+          Table containing the lithologic coding for each regional geologic
+          unit. Geologic units are comprised of more than one rock type,
+          therefore lithology to NSACLASS is a many-to-one relationship.
+          Each lithology is described in a 5 tiered hierarchy and is given a
+          rank based on abundance.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: RECORD_NO
+        Attribute_Definition: unique numeric identifier
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 4027
+      Attribute:
+        Attribute_Label: NSACLASS
+        Attribute_Definition:
+          Regional numeric code assigned to similar geologic units.  Key
+          field to link to AKStategeol_poly.
+        Attribute_Definition_Source: this data source
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 99
+            Range_Domain_Maximum: 12950
+      Attribute:
+        Attribute_Label: LITH1
+        Attribute_Definition: Highest level lithologic classification.  Text field.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: Lithologic data dictionary
+            Codeset_Source: GUIDE_TO_DIGITAL_DATABASE_FILES_(readme), Appendix 1
+      Attribute:
+        Attribute_Label: LITH2
+        Attribute_Definition:
+          Second level lithologic classification.  LITH2 is based on value of
+          LITH1. Text field.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: Lithologic data dictionary
+            Codeset_Source: GUIDE_TO_DIGITAL_DATABASE_FILES_(readme), Appendix 1
+      Attribute:
+        Attribute_Label: LITH3
+        Attribute_Definition:
+          Third level lithologic classification.  LITH3 is based on value of
+          LITH2. Text field.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: Lithologic data dictionary
+            Codeset_Source: GUIDE_TO_DIGITAL_DATABASE_FILES_(readme), Appendix 1
+      Attribute:
+        Attribute_Label: LITH4
+        Attribute_Definition:
+          Fourth level lithologic classification.  LITH4 is based on value of
+          LITH3. Text field.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: Lithologic data dictionary
+            Codeset_Source: GUIDE_TO_DIGITAL_DATABASE_FILES_(readme), Appendix 1
+      Attribute:
+        Attribute_Label: LITH5
+        Attribute_Definition:
+          Fifth level lithologic classification.  LITH5 is based on value of
+          LITH4. Text field.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: Lithologic data dictionary
+            Codeset_Source: GUIDE_TO_DIGITAL_DATABASE_FILES_(readme), Appendix 1
+      Attribute:
+        Attribute_Label: TOTALLITH
+        Attribute_Definition:
+          Concatenation of LITH1, LITH2, LITH3, LITH4, and LITH5.  This
+          field allows for searches on any level of the lithologic hierarchy.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: Lithologic data dictionary
+            Codeset_Source: GUIDE_TO_DIGITAL_DATABASE_FILES_(readme), Appendix 1
+      Attribute:
+        Attribute_Label: LOWEST
+        Attribute_Definition:
+          Copy of the lith field with the most specific part of the lithologic
+          assignment.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: Lithologic data dictionary
+            Codeset_Source: GUIDE_TO_DIGITAL_DATABASE_FILES_(readme), Appendix 1
+      Attribute:
+        Attribute_Label: FORM
+        Attribute_Definition: Description of lithologic form.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: Lithform Data Dictionary
+            Codeset_Source: GUIDE_TO_DIGITAL_DATABASE_FILES_(readme), Appendix 2
+      Attribute:
+        Attribute_Label: RANK
+        Attribute_Definition: Indicates how much of the geologic map unit this lithology represents.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Major
+            Enumerated_Domain_Value_Definition: Greater than or equal to 33 percent
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Minor
+            Enumerated_Domain_Value_Definition: between 10 and 33 percent
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Incidental
+            Enumerated_Domain_Value_Definition: less than 10 percent
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Indeterminate (major)
+            Enumerated_Domain_Value_Definition:
+              Abundance of this lithology is not defined.  The term 'major' is part
+              of the attribute to insure inclusive searches for major rock types,
+              as rock types listed in the indeterminate category could be a major
+              component of a geologic map unit.  These may be eliminated from search
+              results by explicitly omitting 'Indeterminate' from the query results.
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: PERCENT
+        Attribute_Definition:
+          Optional field containing an estimate of percentage of the unit that
+          this lithology represents.  This information is rarely available in
+          Alaska.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 5
+            Range_Domain_Maximum: 100
+      Attribute:
+        Attribute_Label: LITH_COMMENT
+        Attribute_Definition: comment field
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free form text
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: NSAQKEY
+        Entity_Type_Definition:
+          Similar to NSAKEY except it subdivides the Quaternary
+          surficial deposits by assigning color symbols and labels to the
+          Quaternary units.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: SYMBOL
+        Attribute_Definition:
+          Symbol number for wpgcmykg.style; used for symbolizing
+          polygons based on Quaternary units, QCLASS
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 974
+      Attribute:
+        Attribute_Label: QCLASS
+        Attribute_Definition:
+          Subdivision of attribute NSACLASS providing more detailed
+          Quaternary units.  Key field linking to AKStategeol_poly.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsaunits (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: NSACLASS
+        Attribute_Definition: Regional numeric code assigned to similar geologic units.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              nsakey (provided as geodatabase table, Filemaker database,
+              Filemaker runtime, and CSV and DBF files)
+            Codeset_Source: this data set
+      Attribute:
+        Attribute_Label: UNIT_LABEL
+        Attribute_Definition: Geologic unit label for statewide Quaternary map
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Quaternary surficial map unit label.
+      Attribute:
+        Attribute_Label: GEOLOGIC_UNIT
+        Attribute_Definition: Brief description of the surficial map unit
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: NSAREFS
+        Entity_Type_Definition:
+          Reference citation for source map and/or other publication used to
+          build AKStategeol data set.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: REFNUM
+        Attribute_Definition: unique numeric identifier
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 1272
+      Attribute:
+        Attribute_Label: SOURCE
+        Attribute_Definition:
+          Unique code assigned to each source; uses the 2-letter 1:250,000
+          scale quadrangle code and a three digit number.  By default, 001 is
+          reserved for the topographic map or other source of hydrologic spatial
+          data for each quadrangle.  If a source map extends into multiple
+          quadrangles, it has been assigned a source code for each
+          quadrangle covered.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain:
+            Unique code assigned to each source that uses the two letter
+            1:250,000 scale quadrangle code and a three digit number.
+      Attribute:
+        Attribute_Label: REFERENCE
+        Attribute_Definition: Reference citation
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Reference citation written in USGS style.
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: NSASETTING
+        Entity_Type_Definition: Geologic setting for each unique NSACLASS value
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: NSACLASS
+        Attribute_Definition: Regional numeric code assigned to similar geologic units.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 98
+            Range_Domain_Maximum: 20000
+      Attribute:
+        Attribute_Label: SETTING
+        Attribute_Definition: Description of geologic setting for each unique NSACLASS.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: NSAUNITS
+        Entity_Type_Definition:
+          Table derived from the central database, NSAUNITS.  Contains
+          brief abstracts of the unit descriptions from each SOURCE map,
+          which have been classified into regional and statewide units.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: QUADRANGLE
+        Attribute_Definition:
+          Name of 1:250,000 scale quadrangle.  The name of the Mount McKinley
+          1:250,000 scale quadrangle was changed to Denali in September 2015.
+          The records for this area are duplicated as both Mount McKinley(MM)
+          and Denali(DN).
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: MAP_UNIT
+        Attribute_Definition: Geologic unit label from the SOURCE map.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: UNIT_NAME
+        Attribute_Definition: Map unit name from the SOURCE map.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: AGE
+        Attribute_Definition: Geologic age of the unit as given on the SOURCE map.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: DESCRIPTION
+        Attribute_Definition:
+          Abstracted version of the unit description from the SOURCE map.
+          Focus on lithology and important relationships as described on the
+          SOURCE map.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: ROCK_CLASS
+        Attribute_Definition:
+          General classification of geologic unit.  For mixed units, the
+          dominant category is given.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain:
+            Igneous, sedimentary, metamorphic, unconsolidated, or melange.
+            For mixed units, the dominant category is given.
+      Attribute:
+        Attribute_Label: FOSSIL
+        Attribute_Definition: Brief notes on any fossil control mentioned on the SOURCE map.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: RADIOMETRIC_AGE
+        Attribute_Definition: Brief notes on radiometric ages mentioned on the SOURCE map.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: SOURCE
+        Attribute_Definition:
+          Unique code assigned to each source; used the 2-letter code
+          for 1:250,000 scale quadrangles, and a three digit number.  By
+          default, 001 is used for the topographic map or other source of
+          hydrologic spatial data for each quadrangle.  Numbers above 100
+          indicate sources that were not captured digitally.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: CLASS
+        Attribute_Definition:
+          Unique numeric code assigned to each geologic unit on a SOURCE
+          map.  Unique only within a given quadrangle and specific to
+          each SOURCE.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 55240
+      Attribute:
+        Attribute_Label: SOURCE_CLASS
+        Attribute_Definition: Concatenation of fields SOURCE and CLASS.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: NSACLASS
+        Attribute_Definition:
+          Regional numeric code assigned to like geologic units.  Link to many
+          of the other databases or tables.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 90
+            Range_Domain_Maximum: 12950
+      Attribute:
+        Attribute_Label: NSAMOD
+        Attribute_Definition:
+          Indicates if geologic unit is altered, contact metamorphosed, or
+          has a queried unit assignment.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ALT
+            Enumerated_Domain_Value_Definition: Hydrothermally altered, nonspecific
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ALT-BIO
+            Enumerated_Domain_Value_Definition: Biotite alteration
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ALT-POT
+            Enumerated_Domain_Value_Definition: Potassic alteration
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ALT-SER
+            Enumerated_Domain_Value_Definition: Sericitic alteration
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: HFS
+            Enumerated_Domain_Value_Definition: Contact metamorphism, nonspecific
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Q
+            Enumerated_Domain_Value_Definition: Queried (?) geologic unit
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: QCLASS
+        Attribute_Definition: Regional numeric code assigned to similar surficial units.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 4900
+      Attribute:
+        Attribute_Label: NSASUB
+        Attribute_Definition:
+          Used to define the bedrock unit (NSACLASS) underlying surficial
+          deposits.  Not universally populated.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 8626
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: radiometric_ages
+        Entity_Type_Definition:
+          Point feature class with radiometric age data for samples analyzed
+          by K/Ar, 40Ar/39Ar, Rb/Sr, fission-track, and other methods,
+          excluding U/Pb determinations.  Created from Radiometric database,
+          which is provided as a Filemaker database, Filemaker runtime,
+          and DBF and CSV files.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: REC_NO
+        Attribute_Definition: Unique numeric identifier for this data set
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 6108
+      Attribute:
+        Attribute_Label: SAMPLE
+        Attribute_Definition: Sample number/identifier
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: QUAD
+        Attribute_Definition: Name of 1:250,000 scale quadrangle
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: LATITUDE
+        Attribute_Definition: Latitude given in decimal degrees, NAD27
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 50.266667
+            Range_Domain_Maximum: 70.953333
+            Attribute_Units_of_Measure: degree
+      Attribute:
+        Attribute_Label: LONGITUDE
+        Attribute_Definition: Longitude given in decimal degrees, NAD27
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: -179.127
+            Range_Domain_Maximum: 179.433333
+            Attribute_Units_of_Measure: degree
+      Attribute:
+        Attribute_Label: ROCK_TYPE
+        Attribute_Definition: Rock type of sample dated
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: MINERAL
+        Attribute_Definition: Mineral or phase dated
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: METHOD
+        Attribute_Definition: Dating method used
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 40/39
+            Enumerated_Domain_Value_Definition: Argon-argon dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 40/39 Average
+            Enumerated_Domain_Value_Definition: Average of multiple 40Ar/39Ar ages
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 40/39 High temp. frac.
+            Enumerated_Domain_Value_Definition: 40Ar/39Ar high temperature fraction
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 40/39 Isochron
+            Enumerated_Domain_Value_Definition: 40Ar/39Ar isochron age
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 40/39 Plateau
+            Enumerated_Domain_Value_Definition: 40Ar/39Ar plateau age
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 40/39 Total Fusion
+            Enumerated_Domain_Value_Definition: 40Ar/39Ar total fusion age
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Fission-track
+            Enumerated_Domain_Value_Definition: Fission track dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: K/Ar
+            Enumerated_Domain_Value_Definition: Potassium-argon dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Lu/Hf
+            Enumerated_Domain_Value_Definition: Lutetium-hafnium dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pb-alpha
+            Enumerated_Domain_Value_Definition: Lead-alpha dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Rb/Sr
+            Enumerated_Domain_Value_Definition: Rubidium-strontium dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Re/Os
+            Enumerated_Domain_Value_Definition: Rhenium-osmium dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Sm/Nd
+            Enumerated_Domain_Value_Definition: Samarium-neodymium dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: U-Th/He
+            Enumerated_Domain_Value_Definition: Uranium-thorium / helium dating; uranium-helium dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: COMMENT
+        Attribute_Definition: Comments about the sample or analysis.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: REFERENCE
+        Attribute_Definition: Reference citations for the age determination
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: AGE
+        Attribute_Definition: Reported age in millions of years
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: -30.5
+            Range_Domain_Maximum: 3258
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: ERROR
+        Attribute_Definition: Analytical error for the age calculation, if reported
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 1300
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: PLATEAU_AGE
+        Attribute_Definition: 40Ar/39Ar plateau age, if reported
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: -0.0103
+            Range_Domain_Maximum: 832.5
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: PLATEAU_ERROR
+        Attribute_Definition: Analytical error for the 40Ar/39Ar plateau age, if reported
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0.0008
+            Range_Domain_Maximum: 21.8
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: ISOCHRON_AGE
+        Attribute_Definition: 40Ar/39Ar isochron age, if reported
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: -0.019
+            Range_Domain_Maximum: 196.6
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: ISOCHRON_ERROR
+        Attribute_Definition: Analytical error for the 40Ar/39Ar isochron age, if reported
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0.0015
+            Range_Domain_Maximum: 62.6
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: FUSION_AGE
+        Attribute_Definition: 40Ar/39Ar total fusion age, if reported
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: -0.038
+            Range_Domain_Maximum: 1352.4
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: FUSION_ERROR
+        Attribute_Definition: Analytical error for the 40Ar/39Ar total fusion age, if reported
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0.001
+            Range_Domain_Maximum: 129.8
+            Attribute_Units_of_Measure: Ma, million years
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: u_pb_ages
+        Entity_Type_Definition:
+          Point feature class of U-Pb age data for samples analyzed by
+          uranium-lead methods.  Created from u-pb database, which is provided
+          as a Filemaker database, Filemaker runtime, and DBF and CSV files.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: REC_NO
+        Attribute_Definition: unique numeric identifier for this data table
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 1389
+      Attribute:
+        Attribute_Label: SAMPLE
+        Attribute_Definition: Sample number/identifier
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: QUAD
+        Attribute_Definition: Name of 1:250,000 scale quadrangle
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: LATITUDE
+        Attribute_Definition: Latitude given in decimal degrees, NAD27
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 51.376667
+            Range_Domain_Maximum: 68.37
+            Attribute_Units_of_Measure: degree
+      Attribute:
+        Attribute_Label: LONGITUDE
+        Attribute_Definition: Longitude given in decimal degrees, NAD27
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: -174.696667
+            Range_Domain_Maximum: 179.375
+            Attribute_Units_of_Measure: degree
+      Attribute:
+        Attribute_Label: ROCK_TYPE
+        Attribute_Definition: Rock type of sample dated
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: MINERAL
+        Attribute_Definition: Mineral or phase dated
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: METHOD
+        Attribute_Definition: Dating method used
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ICPMS
+            Enumerated_Domain_Value_Definition: Inductively coupled plasma-mass spectrometry
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: SHRIMP
+            Enumerated_Domain_Value_Definition: Sensitive high resolution ion microprobe
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TIMS
+            Enumerated_Domain_Value_Definition: Thermal ionization mass spectrometry
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TIMS-multigrain
+            Enumerated_Domain_Value_Definition: Thermal ionization mass spectrometry multi-grain
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TIMS-singlegrain
+            Enumerated_Domain_Value_Definition: Thermal ionization mass spectrometry single grain
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: U/Th
+            Enumerated_Domain_Value_Definition: Uranium-thorium dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: U/Pb
+            Enumerated_Domain_Value_Definition: Uranium-lead dating
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: COMMENT
+        Attribute_Definition: Comments about the sample or analysis.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: REFERENCE
+        Attribute_Definition: Reference citations for the age determination
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: PREFERRED_AGE
+        Attribute_Definition: Interpreted best age based on the data; reported in millions of years
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0.0051
+            Range_Domain_Maximum: 2108
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: ERROR
+        Attribute_Definition: Analytical error for the preferred age, if reported
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 725
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: SIGMA
+        Attribute_Definition: Number of standard deviations of reported analytical error
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Either 1 or 2 standard deviations
+      Attribute:
+        Attribute_Label: AGE_TYPE
+        Attribute_Definition: Additional description of the interpreted age or sample.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: AGE_EVENT
+        Attribute_Definition: Additional description of the interpreted age.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: free text
+      Attribute:
+        Attribute_Label: F206PB_238U
+        Attribute_Definition: 206Pb/238U age
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0.0051
+            Range_Domain_Maximum: 1977
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: F206PB_238U_ERROR
+        Attribute_Definition: 206Pb/238U age error
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0.06
+            Range_Domain_Maximum: 20
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: F207PB_235U
+        Attribute_Definition: 207Pb/235U age
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 28.9
+            Range_Domain_Maximum: 2054
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: F207PB_235U_ERROR
+        Attribute_Definition: 207Pb/235U age error
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0.1
+            Range_Domain_Maximum: 20
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: F207PB_206PB
+        Attribute_Definition: 207Pb/206Pb age
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 15
+            Range_Domain_Maximum: 2258
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: F207PB_206PB_ERROR
+        Attribute_Definition: 207Pb/206Pb age error
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 399
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: F208PB_232TH
+        Attribute_Definition: 208Pb/232Th age
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 3
+            Range_Domain_Maximum: 2408
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: F208PB_232TH_ERROR
+        Attribute_Definition: 208Pb/232Th age error
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 6
+            Range_Domain_Maximum: 12
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: F206PB_204PB
+        Attribute_Definition: 206Pb/204Pb age
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 21.5
+            Range_Domain_Maximum: 6115
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: F206PB_204PB_ERROR
+        Attribute_Definition: 206Pb/204Pb age error
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: field is empty
+      Attribute:
+        Attribute_Label: UPPER_INTERCEPT
+        Attribute_Definition: Upper concordia intercept
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 70
+            Range_Domain_Maximum: 2450
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: UPPER_ERROR
+        Attribute_Definition: Upper concordia intercept error
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 470
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: LOWER_INTERCEPT
+        Attribute_Definition: Lower concordia intercept
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: -304
+            Range_Domain_Maximum: 1371
+            Attribute_Units_of_Measure: Ma, million years
+      Attribute:
+        Attribute_Label: LOWER_ERROR
+        Attribute_Definition: Lower concordia intercept error
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0.8
+            Range_Domain_Maximum: 699
+            Attribute_Units_of_Measure: Ma, million years
+  Distribution_Information:
+    Distributor:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: U.S. Geological Survey
+        Contact_Address:
+          Address_Type: Mailing
+          Address: MS902 Box 25286 Denver Federal Center
+          City: Lakewood
+          State_or_Province: CO
+          Postal_Code: 80225
+          Country: U.S.A.
+        Contact_Voice_Telephone: 1-888-ASK-USGS
+    Distribution_Liability:
+      This publication was prepared by an agency of the United States Government.
+      Neither the United States Government nor any agency thereof, nor any of their
+      employees, makes any warranty, expressed or implied, or assumes any legal
+      liability or responsibility for the accuracy, product, or process disclosed in this
+      report, or represents that its use would not infringe privately owned rights.
+      Reference therein to any specific commercial product, process, or service by
+      trade name, trademark, manufacturer, or otherwise does not necessarily
+      constitute or imply its endorsement, recommendation, or favoring by the United
+      States Government or any agency thereof.
+    Standard_Order_Process:
+      Digital_Form:
+        Digital_Transfer_Information:
+          Format_Name: Vector Digital Data Set (Polygon)
+        Digital_Transfer_Option:
+          Online_Option:
+            Computer_Contact_Information:
+              Network_Address:
+                Network_Resource_Name: http://dx.doi.org/10.3133/sim3340
+                Network_Resource_Name: http://pubs.usgs.gov/sim/3340
+      Fees: None. No fees are applicable for obtaining the data set.
+  Metadata_Reference_Information:
+    Metadata_Date: 20151026
+    Metadata_Contact:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: U.S. Geological Survey, Alaska Region
+          Contact_Person: Nora B. Shew
+        Contact_Position: Geologist
+        Contact_Address:
+          Address_Type: mailing address
+          Address: 4210 University Drive
+          City: Anchorage
+          State_or_Province: AK
+          Postal_Code: 99508-4626
+          Country: US
+        Contact_Voice_Telephone: 907-786-7445
+        Contact_Facsimile_Telephone: 907-786-7401
+        Contact_Electronic_Mail_Address: nshew@usgs.gov
+    Metadata_Standard_Name: FGDC Content Standard for Digital Geospatial Metadata
+    Metadata_Standard_Version: FGDC-STD-001-1998

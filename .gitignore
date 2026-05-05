@@ -1,0 +1,5 @@
+﻿# Ignore Alaska raw GIS datasets
+/data/raw/alaska_shp/
+/data/raw/Alaska_EQ_GEO/
+/data/raw/Alaska_earthquakes_shallow.csv
+push_debug.txt

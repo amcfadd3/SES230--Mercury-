@@ -1,0 +1,1629 @@
+Metadata:
+  Identification_Information:
+    Citation:
+      Citation_Information:
+        Originator: Frederic H. Wilson
+        Originator: Keith Labay
+        Originator: Nora Shew
+        Originator: Chad P. Hults
+        Publication_Date: 2015
+        Title: Geologic map of Alaska (generalized)
+        Edition: version 1.0
+        Geospatial_Data_Presentation_Form: Vector Digital Data Set (Polygon)
+        Online_Linkage: http://dx.doi.org/10.3133/sim3340
+        Online_Linkage: http://pubs.usgs.gov/sim/3340
+        Larger_Work_Citation:
+          Citation_Information:
+            Originator: Frederic H. Wilson
+            Originator: Chad P. Hults
+            Originator: Charles G. Mull
+            Originator: Susan M. Karl
+            Publication_Date: 2015
+            Title: Geologic Map of Alaska
+            Geospatial_Data_Presentation_Form: Publication (Other)
+            Series_Information:
+              Series_Name: US Geological Survey Scientific Investigations Map
+              Issue_Identification: SIM 3340
+    Description:
+      Abstract:
+        Digital data set used to produce a generalized geologic map of the state of
+        Alaska.  The digital data was derived from a detailed compilation and
+        interpretation of published and unpublished geologic maps covering the state.
+        The digital data from which this was derived is also provided in this publication.
+      Purpose:
+        This data set represents part of a systematic effort to release geologic map
+        data for the United States in a uniform manner.  Geologic data in this data
+        set has been compiled from a wide variety of sources, published and
+        unpublished, ranging from state and regional geologic maps to field mapping.
+    Time_Period_of_Content:
+      Time_Period_Information:
+        Single_Date/Time:
+          Calendar_Date: 2015
+      Currentness_Reference: Publication date
+    Status:
+      Progress: In work
+      Maintenance_and_Update_Frequency: Unknown
+    Spatial_Domain:
+      Bounding_Coordinates:
+        West_Bounding_Coordinate: 172.0
+        East_Bounding_Coordinate: -130.0
+        North_Bounding_Coordinate: 72.0
+        South_Bounding_Coordinate: 51.2
+    Keywords:
+      Theme:
+        Theme_Keyword_Thesaurus: None
+        Theme_Keyword: geology
+      Place:
+        Place_Keyword_Thesaurus: None
+        Place_Keyword: Alaska
+    Access_Constraints: None.
+    Use_Constraints:
+      None.  Acknowledgment of the U.S. Geological Survey would be appreciated
+      in products derived from these data.
+    Point_of_Contact:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: U.S. Geological Survey, Alaska Science Center
+          Contact_Person: Frederic H. Wilson
+        Contact_Position: Research Geologist
+        Contact_Address:
+          Address_Type: mailing address
+          Address: 4210 University Drive
+          City: Anchorage
+          State_or_Province: AK
+          Postal_Code: 99508-4626
+          Country: US
+        Contact_Voice_Telephone: 907-786-7448
+        Contact_Electronic_Mail_Address: fwilson@usgs.gov
+    Native_Data_Set_Environment:
+      Environment as of Metadata Creation: Microsoft Windows 7 Version 6.1
+      (Build 7601) Service Pack 1; ESRI ArcCatalog 10.2 (Build 3552) Service
+      Pack [N/A] (Build [N/A])
+  Data_Quality_Information:
+    Attribute_Accuracy:
+      Attribute_Accuracy_Report:
+        Many types of source materials of varying scales were used to compile this
+        data set.  Sources include previously published maps, unpublished mapping,
+        and air photo interpretation, and reflects more than a century of work in Alaska.
+        Vector features were mostly digitized either by digitizing on screen or on a
+        large format digitizing tablet.  Vectors and polygons were attributed and checked.
+        Topology rules were checked.
+    Logical_Consistency_Report:
+      The geologic data consists of attributed arcs and polygons.  Each polygon
+      has a coded attribute designating the mapped geologic map unit.  Faults,
+      stratigraphic contacts, and other linear features are represented as arcs.
+      When a fault is also a stratigraphic contact, only a single arc is present.
+      Dangling arcs may be present (fault, dike, lineation, etc.).
+    Completeness_Report:
+      AKStategeolpoly_generalized and AKStategeolarc_generalized were derived
+      from AKStategeol_poly and AKStategeol_arc respectively, in order to produce a
+      simplified map for graphic presentation.  The parent data sets contain more
+      detailed mapping and information about the geology, including original map
+      unit, age, lithology, and reference source.  Detailed geologic unit descriptions
+      are provided in the accompanying pamphlet.
+    Positional_Accuracy:
+      Horizontal_Positional_Accuracy:
+        Horizontal_Positional_Accuracy_Report:
+          Data for the generalized geologic map is presented at 1:1,584,000 scale
+          (or 1 inch =  25 miles).  The parent data set is presented for use at a nominal
+          scale of 1:250,000.
+    Lineage:
+      Process_Step:
+        Process_Description:
+          The geology for each of the 153 1:250,000 scale quadrangles in Alaska
+          was compiled from many different sources.  Linework was hand digitized
+          from materials of various media and scale.  The arcs and polygons were
+          attributed, and topology was checked.  Data is archived as ARC/Info
+          coverages.
+        Process_Date: Unknown
+      Process_Step:
+        Process_Description:
+          The geology data from the 153 quadrangle coverages were combined to
+          create the detailed map feature classes in AKStategeol.gdb.
+        Process_Date: 2015
+      Process_Step:
+        Process_Description:
+          The generalized map features were created from the detailed map features
+          by this process.  The detailed geologic units were combined using attribute
+          GROUP_ID, and then rasterized with 100 m cells.  The raster data
+          was manipulated in several steps using GROUP_ID and area to reduce
+          the amount of surficial units and water.  It was also used to remove small
+          areas and slivers of a generalized unit (GROUP_ID).  The grid was converted
+          to polygons, which were used to create labels and lines, and then the lines
+          were smoothed and used to create new polygons with attributes from
+          the new labels.  These new polygons are AKStategeolpoly_generalized.
+        Process_Date: 2015
+      Process_Step:
+        Process_Description:
+          AKStategeolarc_generalized is a subset of AKStategeol_arc, consisting
+          of caldera rims and  major faults.
+        Process_Date: 2015
+  Spatial_Data_Organization_Information:
+    Direct_Spatial_Reference_Method: Vector
+    Point_and_Vector_Object_Information:
+      SDTS_Terms_Description:
+        SDTS_Point_and_Vector_Object_Type: G-polygon
+        Point_and_Vector_Object_Count: 15466
+  Spatial_Reference_Information:
+    Horizontal_Coordinate_System_Definition:
+      Planar:
+        Map_Projection:
+          Map_Projection_Name: NAD 1983 Alaska Albers (ESRI Full Name: NAD_1983_Alaska_Albers)
+          Albers_Conical_Equal_Area:
+            Standard_Parallel: 55.0
+            Standard_Parallel: 65.0
+            Longitude_of_Central_Meridian: -154.0
+            Latitude_of_Projection_Origin: 50.0
+            False_Easting: 0.0
+            False_Northing: 0.0
+        Planar_Coordinate_Information:
+          Planar_Coordinate_Encoding_Method: coordinate pair
+          Coordinate_Representation:
+            Abscissa_Resolution: 0.6096
+            Ordinate_Resolution: 0.6096
+          Planar_Distance_Units: Meter
+      Geodetic_Model:
+        Horizontal_Datum_Name: D_North_American_1983
+        Ellipsoid_Name: GRS_1980
+        Semi-major_Axis: 6378137.0
+        Denominator_of_Flattening_Ratio: 298.257222101
+  Entity_and_Attribute_Information:
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: AKStategeolpoly_generalized
+        Entity_Type_Definition:
+          Characteristics of the polygon features are coded in the attribute table.
+          The table includes the following items:  GROUP_ID, GROUP_SYMBOL,
+          GROUP_LABEL, GROUP_LABEL2, GROUP_NAME, and GROUP_AGE.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: GROUP_ID
+        Attribute_Definition: Unique numeric identifier of map units on the generalized geologic map of Alaska.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 1000
+      Attribute:
+        Attribute_Label: GROUP_SYMBOL
+        Attribute_Definition: Symbol number used to identify color in style file wpgcmykg.style.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 992
+      Attribute:
+        Attribute_Label: GROUP_LABEL
+        Attribute_Definition:
+          Geologic map unit label using special characters to designate geologic
+          age symbols in FGDCGeoAge font.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain:
+            Special symbols used and the geologic age they represent are:  } Mesozoic,
+            ^ Triassic, | Paleozoic, * Pennsylvanian, _ Cambrian, and < Proterozoic.
+            GROUP_LABEL correlates with Attribute_Label GROUP_LABEL2.
+      Attribute:
+        Attribute_Label: GROUP_LABEL2
+        Attribute_Definition:
+          Geologic map unit label used for the generalized geologic map of Alaska.
+          Substitutes for special characters include IP for Pennsylvanian and Px for
+          Proterozoic.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: bu
+            Enumerated_Domain_Value_Definition: Bedrock of unknown type or age or areas not mapped (unknown age)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Ca
+            Enumerated_Domain_Value_Definition: Adams Argillite (Cambrian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: CDbrv
+            Enumerated_Domain_Value_Definition: Volcanic rocks and sills (Pennsylvanian? to Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Clg
+            Enumerated_Domain_Value_Definition: Lisburne Group, undivided (Carboniferous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Clgne
+            Enumerated_Domain_Value_Definition:
+              Wahoo, Alapah, and Wachsmuth Limestones (Lisburne Group)
+              (Middle Pennsylvanian to Mississippian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Clgtk
+            Enumerated_Domain_Value_Definition:
+              Tupik and Kogruk Formations (Lisburne Group) (Pennsylvanian to
+              Upper Mississippian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: CPxt
+            Enumerated_Domain_Value_Definition: Tindir Group (Cambrian? and Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: CPxwg
+            Enumerated_Domain_Value_Definition: Wales Group, undivided (Cambrian to Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: CPxwn
+            Enumerated_Domain_Value_Definition: Wickersham and Neruokpuk units (Cambrian and Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Crc
+            Enumerated_Domain_Value_Definition: Rainbow chert (Togiak-Tikchik Complex) (Carboniferous?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Das
+            Enumerated_Domain_Value_Definition: Bimodal metavolcanic rocks (Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Dbf
+            Enumerated_Domain_Value_Definition: Beaucoup Formation, undivided (Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DCbg
+            Enumerated_Domain_Value_Definition: Baird Group and similar rocks (Middle Devonian to upper Cambrian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Dcc
+            Enumerated_Domain_Value_Definition: Karheen and Cedar Cove Formations (Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DCmt
+            Enumerated_Domain_Value_Definition: Metaturbidite marble and calcareous schist (Nome Complex) (Devonian to Cambrian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DCsp
+            Enumerated_Domain_Value_Definition: Schist and phyllite of the Alaska Range (Devonian or older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DCwbl
+            Enumerated_Domain_Value_Definition: Farewell basinal facies carbonate rocks (Devonian or older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Degh
+            Enumerated_Domain_Value_Definition: Hunt Fork Shale (Endicott Group) (Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Degn
+            Enumerated_Domain_Value_Definition: Noatak Sandstone (Endicott Group) (Upper Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Dgb
+            Enumerated_Domain_Value_Definition: Gambier Bay Formation, undivided (Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DOgi
+            Enumerated_Domain_Value_Definition: Older plutonic rocks of southeast Alaska (Early Devonian to Ordovician)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DOls
+            Enumerated_Domain_Value_Definition: Thin-bedded limestone (Lower Devonian to Ordovician)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DOsc
+            Enumerated_Domain_Value_Definition: Shale, chert, and argillite (Lower Devonian to Ordovician)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DOtu
+            Enumerated_Domain_Value_Definition:
+              Metasedimentary and metavolcanic rocks of Tukpahlearik Creek, undivided
+              (Devonian to Ordovician)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DPxcn
+            Enumerated_Domain_Value_Definition:
+              Metasedimentary and metavolcanic rocks of the Central Belt and Northern
+              Thrust assemblage of Till and others (2008a) (Devonian to Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DPxga
+            Enumerated_Domain_Value_Definition:
+              Gneiss, amphibolite, schist, quartzite, and marble (Yukon-Tanana crystalline
+              complex) (Devonian or older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DPxnl
+            Enumerated_Domain_Value_Definition: Older carbonate rocks of northern Alaska (Lower Devonian to Proterozoic?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DPxsb
+            Enumerated_Domain_Value_Definition: Brooks Range schist belt (Devonian to Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DPxsq
+            Enumerated_Domain_Value_Definition:
+              Pelitic schist and quartzite and mafic interbeds (Yukon-Tanana crystalline complex)
+              (Devonian and older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DSsm
+            Enumerated_Domain_Value_Definition: Shallow-marine, carbonate-dominated rocks (Devonian and Silurian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DSum
+            Enumerated_Domain_Value_Definition: Older ultramafic rocks of southeast Alaska (Devonian and Silurian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DSv
+            Enumerated_Domain_Value_Definition: Basalt, andesite, and sedimentary rocks (Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Dvec
+            Enumerated_Domain_Value_Definition: Woodchopper Volcanics and Schwatka unit of Weber and others (1992) (Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DZwp
+            Enumerated_Domain_Value_Definition: Farewell platform facies (Upper Devonian, Frasnian to Neoproterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DZyf
+            Enumerated_Domain_Value_Definition: Clastic and carbonate rocks of the Yukon Flats Basin (Devonian to Neoproterozoic?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: DZyk
+            Enumerated_Domain_Value_Definition:
+              Sedimentary and metasedimentary rocks of York terrane (Lower Devonian
+              to Ordovician)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: g
+            Enumerated_Domain_Value_Definition: Glaciers
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: lPDcf
+            Enumerated_Domain_Value_Definition: Calico Bluff and Ford Lake Shale, undivided (Lower Pennsylvanian to Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: lPMn
+            Enumerated_Domain_Value_Definition: Nuka Formation (Carboniferous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: lPsb
+            Enumerated_Domain_Value_Definition:
+              Upper Saginaw Bay Formation and similar rocks of southeast Alaska
+              (Pennsylvanian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Jag
+            Enumerated_Domain_Value_Definition: Bokan Mountain peralkaline granite and syenite (Middle Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JDmc
+            Enumerated_Domain_Value_Definition: Mystic structural complex, undivided (Jurassic to Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JDoc
+            Enumerated_Domain_Value_Definition: Igneous rocks (Angayucham) (Jurassic to Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Jegr
+            Enumerated_Domain_Value_Definition: Intermediate to mafic plutonic rocks (Early Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JlPe
+            Enumerated_Domain_Value_Definition: Etivluk Group, undivided (Middle Jurassic to Pennsylvanian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Jk
+            Enumerated_Domain_Value_Definition: Graywacke of Kulukak Bay of Hoare and Coonrad (1978) (Upper to Middle Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Jlmgr
+            Enumerated_Domain_Value_Definition: Plutonic rocks (Late and Middle Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JMct
+            Enumerated_Domain_Value_Definition: Cherty tuff and breccia (Angayucham) (Jurassic? to Mississippian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JMps
+            Enumerated_Domain_Value_Definition: Clastic and carbonate rocks, Porcupine River region (Jurassic to Mississippian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JPk
+            Enumerated_Domain_Value_Definition:
+              Kakhonak Complex and Tlikakila complex of Carlson and Wallace (1983)
+              (Jurassic, Triassic, and older?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JPs
+            Enumerated_Domain_Value_Definition:
+              Calcareous and metabasaltic schist and phyllite (Togiak-Tikchik Complex)
+              (Early Jurassic to Permian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JPzc
+            Enumerated_Domain_Value_Definition: Chulitna sequence, undivided (Jurassic to upper Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JPzs
+            Enumerated_Domain_Value_Definition: Northern Alaska sedimentary rocks (Middle Jurassic to Carboniferous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Jsct
+            Enumerated_Domain_Value_Definition: Shelikof and Chinitna Formations and Tuxedni Group (Middle Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Jtk
+            Enumerated_Domain_Value_Definition: Talkeetna Formation (Early Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JTrkp
+            Enumerated_Domain_Value_Definition:
+              Limestone and volcanic rocks of the Kenai Peninsula (Early Jurassic and Late
+              Triassic, Norian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JTrmv
+            Enumerated_Domain_Value_Definition:
+              Tatina River volcanics of Bundtzen and others (1997a) (Mystic structural complex)
+              (Jurassic and Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JTros
+            Enumerated_Domain_Value_Definition: Newenham ophiolite complex (Jurassic and Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JTrsch
+            Enumerated_Domain_Value_Definition: Blueschist of southern Alaska (Early Jurassic to Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JTrsr
+            Enumerated_Domain_Value_Definition: Spiculitic rocks (Lower Jurassic and Upper Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: JZu
+            Enumerated_Domain_Value_Definition:
+              Mafic and ultramafic rocks in central, western, and northern Alaska (Jurassic
+              to late Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kcca
+            Enumerated_Domain_Value_Definition: Coquina and calcarenite (Lower Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kcgc
+            Enumerated_Domain_Value_Definition: Calcareous graywacke and conglomerate (Lower Cretaceous, Albian to Aptian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kchf
+            Enumerated_Domain_Value_Definition: Chugach accretionary complex (Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kcvg
+            Enumerated_Domain_Value_Definition:
+              Calcareous graywacke and mudstone, volcanic graywacke, and conglomerate 
+              (lower Upper or upper Lower Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KDt
+            Enumerated_Domain_Value_Definition: Togiak-Tikchik Complex, undivided (Mesozoic to Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Keg
+            Enumerated_Domain_Value_Definition: Granodiorite and other plutonic rocks (Early Cretaceous, Aptian to Hauterivian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kfy
+            Enumerated_Domain_Value_Definition: Flysch (Upper and Lower? Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Khs
+            Enumerated_Domain_Value_Definition: Rocks of Hammond River shear zone of Till and others (2008a) (Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kipc
+            Enumerated_Domain_Value_Definition: Mafic igneous-clast conglomerate, sandstone, and mudstone (Lower Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KJab
+            Enumerated_Domain_Value_Definition: Andesite and basalt (Early Cretaceous and Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KJgn
+            Enumerated_Domain_Value_Definition: Gravina-Nuzotin unit (Lower Cretaceous and Upper Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KJgu
+            Enumerated_Domain_Value_Definition: Plutonic rocks and dikes (Cretaceous to Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KJs
+            Enumerated_Domain_Value_Definition: Fine-grained sedimentary and metasedimentary rocks (Cretaceous or Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KJse
+            Enumerated_Domain_Value_Definition:
+              Saint Elias Suite of Gordey and Makepeace (2003) and similar rocks
+              (Early Cretaceous and Late Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KJsnk
+            Enumerated_Domain_Value_Definition:
+              Staniukovich and Naknek Formations, Kotsina Conglomerate, and similar
+              rocks of southern Alaska (Lower Cretaceous to Jurassic, Pliensbachian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KJvp
+            Enumerated_Domain_Value_Definition: Volcano-plutonic complexes (Cretaceous and Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KJyg
+            Enumerated_Domain_Value_Definition: Yakutat Group, undivided (Lower Cretaceous and Upper Jurassic?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KJyh
+            Enumerated_Domain_Value_Definition: Graywacke of the Yenlo Hills (Cretaceous? and uppermost Jurassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kk
+            Enumerated_Domain_Value_Definition: Kuskokwim Group, undivided (Upper Cretaceous to upper Lower Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kke
+            Enumerated_Domain_Value_Definition: Kemik Sandstone (Lower Cretaceous, Hauterivian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kkg
+            Enumerated_Domain_Value_Definition:
+              Flysch and quartzite, Kandik Group and equivalents (Lower Cretaceous,
+              Albian to Valanginian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Klgr
+            Enumerated_Domain_Value_Definition: Intermediate granitic rocks (Late Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kmgr
+            Enumerated_Domain_Value_Definition: Granitic rocks of central and southeast Alaska (Cretaceous, Coniacian to Albian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kmig
+            Enumerated_Domain_Value_Definition: Migmatite and metaplutonic rocks (Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KMm
+            Enumerated_Domain_Value_Definition: West-central Alaska melange (Angayucham) (Cretaceous or older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kms
+            Enumerated_Domain_Value_Definition: Mafic and shoshonitic volcanic rocks (Early Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kmss
+            Enumerated_Domain_Value_Definition: Marine sandstone and siltstone (Cretaceous, Cenomanian to Albian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kmuc
+            Enumerated_Domain_Value_Definition: McHugh and Uyak Complexes and similar rocks (Late Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Knmt
+            Enumerated_Domain_Value_Definition: Nonmarine to shelf sedimentary rocks (Tertiary? and Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kns
+            Enumerated_Domain_Value_Definition: Sedimentary rocks of the North Slope (Cretaceous, Cenomanian to Albian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kok
+            Enumerated_Domain_Value_Definition: Okpikruak and Kongakut Formations (Lower Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kpf
+            Enumerated_Domain_Value_Definition: Pedmar Formation (Lower Cretaceous, Albian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kps
+            Enumerated_Domain_Value_Definition: Pelitic schist (Late Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KPss
+            Enumerated_Domain_Value_Definition:
+              Kingak Shale, Shublik Formation, and Karen Creek Sandstone, undivided
+              (Lower Cretaceous to Permian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KPzum
+            Enumerated_Domain_Value_Definition: Mafic and ultramafic rocks in southern Alaska (Cretaceous to late Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Ksb
+            Enumerated_Domain_Value_Definition: Schrader Bluff Formation (Upper Cretaceous, Maastrichtian to Santonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Ksbf
+            Enumerated_Domain_Value_Definition: Seabee Formation and Hue Shale (Upper Cretaceous, Coniacian to Turonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Ksfg
+            Enumerated_Domain_Value_Definition: Foliated granitic rocks of southeast Alaska (middle Cretaceous?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Ksmd
+            Enumerated_Domain_Value_Definition:
+              Shallow to moderate depth sedimentary rocks (Upper Cretaceous to
+              upper Lower Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KTrm
+            Enumerated_Domain_Value_Definition: Kelp Bay Group, undivided (Cretaceous to Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: KTrvs
+            Enumerated_Domain_Value_Definition: Volcanic and sedimentary rocks of southwest Alaska (Cretaceous to Triassic?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kvgc
+            Enumerated_Domain_Value_Definition: Volcanic graywacke and conglomerate (Lower Cretaceous, Hauterivian and older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kvu
+            Enumerated_Domain_Value_Definition: Volcanic rocks, undivided (Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Kyg
+            Enumerated_Domain_Value_Definition: Volcanic graywacke and mudstone (Lower Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MDe
+            Enumerated_Domain_Value_Definition: Endicott Group, undivided (Mississippian to Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MDegk
+            Enumerated_Domain_Value_Definition:
+              Kanayut Conglomerate and Noatak Sandstone, undivided (Endicott Group)
+              (Lower Mississippian and Upper Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MDip
+            Enumerated_Domain_Value_Definition: Iyoukeen and Peratrovich Formations (Mississippian and Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MDmg
+            Enumerated_Domain_Value_Definition: Granitic rocks and orthogneiss (Mississippian to Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MDts
+            Enumerated_Domain_Value_Definition:
+              Totatlanika Schist (Yukon-Tanana crystalline complex) (Early Mississippian
+              to Late Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MDv
+            Enumerated_Domain_Value_Definition: Greenstone and schist (Togiak-Tikchik Complex) (Mississippian? and Devonian?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Mgq
+            Enumerated_Domain_Value_Definition: Globe quartzite of Weber and others (1992) (Mississippian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Mk
+            Enumerated_Domain_Value_Definition: Kayak Shale (Endicott Group) (Mississippian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Mlgac
+            Enumerated_Domain_Value_Definition: Akmalik Chert and other black chert of the Lisburne Group (Mississippian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Mlgk
+            Enumerated_Domain_Value_Definition: Kuna Formation (Lisburne Group) (Mississippian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Mlgnu
+            Enumerated_Domain_Value_Definition: Nasorak and Utukok Formations (Lisburne Group) (Mississippian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MOkg
+            Enumerated_Domain_Value_Definition: Kaskawulsh group of Kindle (1953) (Mississippian and older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MPxgs
+            Enumerated_Domain_Value_Definition:
+              Gneiss, schist, and amphibolite (Yukon-Tanana crystalline complex)
+              (Mississippian, Devonian, and older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Mzm
+            Enumerated_Domain_Value_Definition: Melanges (Mesozoic to Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MzPza
+            Enumerated_Domain_Value_Definition: Metamorphic rocks of Admiralty Island, undivided (Mesozoic to Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MzPzcp
+            Enumerated_Domain_Value_Definition:
+              Metamorphic rocks associated with the Coast plutonic complex of Brew
+              and Morrell (1979b) (Triassic to Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MzPzka
+            Enumerated_Domain_Value_Definition:
+              Kisaralik anticlinorium of Box and others (1993) (Togiak-Tikchik Complex)
+              (Jurassic metamorphism, early Mesozoic or Paleozoic protolith)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: MzPzmb
+            Enumerated_Domain_Value_Definition: Metabasite (Mesozoic and Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Oc
+            Enumerated_Domain_Value_Definition: Chert of Interior Alaska (Ordovician)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: OCjr
+            Enumerated_Domain_Value_Definition: Jones Ridge Limestone and related units (Ordovician to Cambrian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: OCv
+            Enumerated_Domain_Value_Definition: Fossil Creek Volcanics and similar rocks (Ordovician and Cambrian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: OPxpt
+            Enumerated_Domain_Value_Definition:
+              Older rocks of York terrane and Grantley Harbor Fault zone (Middle Ordovician
+              to Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pcs
+            Enumerated_Domain_Value_Definition: Clastic and volcaniclastic rocks (Togiak-Tikchik Complex) (Permian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: PDcf
+            Enumerated_Domain_Value_Definition:
+              Cannery Formation and Porcupine slate of Redman and others (1985),
+              undivided (Permian to Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: PDms
+            Enumerated_Domain_Value_Definition: Sedimentary rocks of the Mystic structural complex (Permian to Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: PIPgi
+            Enumerated_Domain_Value_Definition: Granodiorite, syenite, and other granitic rocks (early Permian and Pennsylvanian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: PIPsm
+            Enumerated_Domain_Value_Definition: Strelna Metamorphics and related rocks (early Permian to Middle Pennsylvanian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Plss
+            Enumerated_Domain_Value_Definition: Limestone and calcareous clastic rocks (Permian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pstc
+            Enumerated_Domain_Value_Definition: Step Conglomerate (lower Permian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pv
+            Enumerated_Domain_Value_Definition: Andesite and basalt of southern Alaska (early Permian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pxkd
+            Enumerated_Domain_Value_Definition: Katakturuk Dolomite (Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pxqm
+            Enumerated_Domain_Value_Definition: Basement of the White Mountain sequence (Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pxv
+            Enumerated_Domain_Value_Definition:
+              Basalt and red beds member (Tindir Group) and Mount Copleston volcanic
+              rocks of Moore (1987) (Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pzc
+            Enumerated_Domain_Value_Definition: Marble (early Permian to early Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pzcu
+            Enumerated_Domain_Value_Definition: Black chert (lower Paleozoic, Devonian, or older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pze
+            Enumerated_Domain_Value_Definition: Eclogite and associated rocks (Yukon-Tanana crystalline complex) (Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pzkn
+            Enumerated_Domain_Value_Definition:
+              Klondike Schist, Keevy Peak Formation, and similar rocks (Yukon-Tanana
+              crystalline complex) (Permian to early Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pzls
+            Enumerated_Domain_Value_Definition: Limestone and marble (Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Pznp
+            Enumerated_Domain_Value_Definition: Metagabbro and metasedimentary rocks (Nome Complex) (Paleozoic?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: PzPxgb
+            Enumerated_Domain_Value_Definition: Gabbro and metagabbro (early Paleozoic and Proterozoic?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: PzPxkg
+            Enumerated_Domain_Value_Definition:
+              High-grade metamorphic rocks of the Seward Peninsula (earliest Paleozoic
+              to Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: PzPxnc
+            Enumerated_Domain_Value_Definition: Nome Complex, undivided (early Paleozoic to Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: PzPxrqm
+            Enumerated_Domain_Value_Definition: Pelitic and quartzitic schist of the Ruby terrane (early Paleozoic to Proterozoic?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: PzZncl
+            Enumerated_Domain_Value_Definition: Layered sequence (Nome Complex) (Devonian to Neoproterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: QTgm
+            Enumerated_Domain_Value_Definition: Yakataga and Tugidak Formations (Quaternary and uppermost Tertiary)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: QTm
+            Enumerated_Domain_Value_Definition:
+              Contact metamorphosed and hydrothermally altered rocks (Quaternary
+              or late Tertiary)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: QTs
+            Enumerated_Domain_Value_Definition:
+              Unconsolidated and poorly consolidated surficial deposits (Quaternary, Pleistocene, 
+              and uppermost Tertiary)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: QTvi
+            Enumerated_Domain_Value_Definition: Young volcanic and shallow intrusive rocks (Quaternary or late Tertiary)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: QTvs
+            Enumerated_Domain_Value_Definition: Kiska Harbor and Milky River Formations (Quaternary? and late Tertiary)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: SCda
+            Enumerated_Domain_Value_Definition: Older rock units of the Doonerak Window (Silurian to Cambrian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: SCwbc
+            Enumerated_Domain_Value_Definition: Farewell basinal facies clastic rocks (Silurian to upper Cambrian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: SOig
+            Enumerated_Domain_Value_Definition: Iviagik group of Martin (1970) (Silurian, Llandovery, to Ordovician)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: SOmi
+            Enumerated_Domain_Value_Definition: Heterogeneous metamorphic rocks, southeast Alaska (Silurian and Ordovician)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: SOpw
+            Enumerated_Domain_Value_Definition:
+              Sedimentary and volcanic rocks of Prince of Wales Island (Silurian,
+              Llandovery, and Ordovician)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: SZfwr
+            Enumerated_Domain_Value_Definition:
+              Four Winds complex of Gilbert and others (1987), Retreat Group, and
+              orthogneiss (Silurian to Proterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tbk
+            Enumerated_Domain_Value_Definition: Basalt and keratophyre (Tertiary, Paleogene, or older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tcb
+            Enumerated_Domain_Value_Definition: Coal-bearing sedimentary rocks (Tertiary, Pliocene to Eocene?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tcc
+            Enumerated_Domain_Value_Definition: Gneiss and amphibolite (Tertiary, Miocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tcl
+            Enumerated_Domain_Value_Definition: Copper Lake Formation (Tertiary, Eocene to Paleocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tcp
+            Enumerated_Domain_Value_Definition:
+              Younger phase, Coast plutonic complex of Brew and Morrell (1979b)
+              (Tertiary, Eocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tcpp
+            Enumerated_Domain_Value_Definition:
+              Porphyritic granodiorite phase of Coast plutonic complex of Brew and Morrell
+              (1979b) (Tertiary, Eocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tehi
+            Enumerated_Domain_Value_Definition: Felsic dikes, sills, and small stocks in southern Alaska (Tertiary and older?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tgb
+            Enumerated_Domain_Value_Definition: Gabbroic rocks in southern Alaska (Tertiary)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Thi
+            Enumerated_Domain_Value_Definition: Hypabyssal intrusions (Tertiary)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tk
+            Enumerated_Domain_Value_Definition: Kootznahoo Formation (Tertiary, lower Miocene to upper Eocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TKcf
+            Enumerated_Domain_Value_Definition: Canning Formation (lower Tertiary, Oligocene? to Cretaceous, Albian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TKgi
+            Enumerated_Domain_Value_Definition:
+              Granitic rocks of southern and interior Alaska (Tertiary, Paleocene to
+              Cretaceous, Maastrichtian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TKgr
+            Enumerated_Domain_Value_Definition:
+              Ghost Rocks Formation and similar rocks (Tertiary, Paleocene, and Upper
+              Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TKkf
+            Enumerated_Domain_Value_Definition: Krugoli Formation, undifferentiated (Tertiary, Paleogene, or Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TKm
+            Enumerated_Domain_Value_Definition: Mafic intrusive rocks (Tertiary to Late Cretaceous or older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tknt
+            Enumerated_Domain_Value_Definition: Nearshore and nonmarine sedimentary rocks in southern Alaska (Tertiary)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TKpc
+            Enumerated_Domain_Value_Definition:
+              Prince Creek Formation (lower Tertiary, Paleocene, to Upper Cretaceous,
+              Campanian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TKpr
+            Enumerated_Domain_Value_Definition: Flows and pyroclastic rocks (early Tertiary to Late Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TKs
+            Enumerated_Domain_Value_Definition: Conglomerate, sandstone, and lignite (lower Tertiary to Upper Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TKtsp
+            Enumerated_Domain_Value_Definition:
+              Foliated tonalite sill and pegmatite, Coast plutonic complex of Brew and Morrell
+              (1979b) (Tertiary, Eocene? to latest Cretaceous)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tmi
+            Enumerated_Domain_Value_Definition: Younger granitic rocks (Tertiary, Pliocene to Miocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TMzmb
+            Enumerated_Domain_Value_Definition:
+              MacLaren metamorphic belt of Smith and Lanphere (1971) (Tertiary to
+              Jurassic or older?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TMzu
+            Enumerated_Domain_Value_Definition: Basement rocks, undifferentiated, Aleutian Islands (Tertiary or older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tng
+            Enumerated_Domain_Value_Definition: Nenana Gravel (Tertiary, Pliocene and upper Miocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Toeg
+            Enumerated_Domain_Value_Definition: Granitic rocks in southern Alaska (Tertiary, Oligocene and Eocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Togum
+            Enumerated_Domain_Value_Definition:
+              Mafic and ultramafic rocks of the Valdez and Orca Groups (Tertiary,
+              Eocene to Paleocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Togv
+            Enumerated_Domain_Value_Definition:
+              Volcanic rocks of the Orca Group and Ghost Rocks Formation (Tertiary,
+              Eocene to Paleocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Top
+            Enumerated_Domain_Value_Definition: Redwood and Poul Creek Formations (Tertiary, Miocene to Eocene?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tovs
+            Enumerated_Domain_Value_Definition:
+              Sedimentary and volcanic rocks of the Orca Group, undivided (Tertiary,
+              Eocene to Paleocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tpgi
+            Enumerated_Domain_Value_Definition: Granitic intrusive rocks of the Chugach accretionary complex (Tertiary, Paleocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TPzi
+            Enumerated_Domain_Value_Definition: Undivided dikes and sills (Tertiary to Paleozoic?)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tsf
+            Enumerated_Domain_Value_Definition: Sagavanirktok Formation (Tertiary, Miocene to Paleocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tski
+            Enumerated_Domain_Value_Definition: Sitkinak and Sitkalidak Formations (Tertiary, Oligocene to Eocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tsmo
+            Enumerated_Domain_Value_Definition: Sedimentary rocks of southwest Alaska (Tertiary, Miocene and Oligocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tsu
+            Enumerated_Domain_Value_Definition: Sedimentary rocks, undivided (Tertiary)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Ttsr
+            Enumerated_Domain_Value_Definition: Sedimentary rocks of eastern Prince William Sound (Tertiary, Eocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tv
+            Enumerated_Domain_Value_Definition: Volcanic rocks, undivided (Tertiary)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tvc
+            Enumerated_Domain_Value_Definition: Victoria Creek metamorphic rocks (Tertiary, Paleocene metamorphism)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tvcs
+            Enumerated_Domain_Value_Definition: Volcanic and sedimentary rocks (Tertiary, Oligocene and Eocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tvme
+            Enumerated_Domain_Value_Definition: Older volcanic rocks, undivided (Tertiary, early Miocene to Eocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Tvpm
+            Enumerated_Domain_Value_Definition: Younger volcanic rocks, undivided (Tertiary, Pliocene and Miocene)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Trcs
+            Enumerated_Domain_Value_Definition: Calcareous sedimentary rocks (Upper Triassic, middle? Norian and upper Carnian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TrDtz
+            Enumerated_Domain_Value_Definition: Sedimentary rocks and chert (Angayucham) (Triassic to Devonian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Trgs
+            Enumerated_Domain_Value_Definition: Shublik Formation and lower Glenn Shale (Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Trhg
+            Enumerated_Domain_Value_Definition: Hyd Group, undivided (Upper and Middle Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TrlPms
+            Enumerated_Domain_Value_Definition: Skolai and Mankomen Groups, undivided (Triassic to Pennsylvanian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TrlPsf
+            Enumerated_Domain_Value_Definition: Flysch-like sedimentary rocks (Triassic to Pennsylvanian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Trmb
+            Enumerated_Domain_Value_Definition: Massive basalt and greenstone (Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Trmls
+            Enumerated_Domain_Value_Definition: Marble and limestone of Wrangellia (Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TrMsm
+            Enumerated_Domain_Value_Definition:
+              Seventymile assemblage (Yukon-Tanana crystalline complex) (Triassic
+              to Mississippian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TrPsg
+            Enumerated_Domain_Value_Definition: Sadlerochit Group, undivided (Lower Triassic to Permian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TrPvs
+            Enumerated_Domain_Value_Definition: Metamorphic rocks, southeast Alaska (Triassic to Permian)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TrPzbi
+            Enumerated_Domain_Value_Definition: Metamorphic rocks of Baranof Island (Triassic or older)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TrPzgp
+            Enumerated_Domain_Value_Definition: Metagraywacke and phyllite (Triassic? and late Paleozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Trqd
+            Enumerated_Domain_Value_Definition: Quartz diorite and granodiorite (Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Trsf
+            Enumerated_Domain_Value_Definition: Shuyak Formation, undivided (Upper Triassic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Xio
+            Enumerated_Domain_Value_Definition: Kanektok metamorphic complex and Idono Complex (Paleoproterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Zam
+            Enumerated_Domain_Value_Definition: Metasedimentary and metavolcanic rocks of Mount Angayukaqsraq (Neoproterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Zgn
+            Enumerated_Domain_Value_Definition: Gneiss of northern Alaska (Neoproterozoic)
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: GROUP_NAME
+        Attribute_Definition: Name of geologic map unit on generalized geologic map of Alaska.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain:
+            Correlates with attributes GROUP_ID, GROUP_LABEL, and GROUP_LABEL2.
+            See Attribute_Domain_Values for GROUP_LABEL2.
+      Attribute:
+        Attribute_Label: GROUP_AGE
+        Attribute_Definition: Age of geologic map unit on generalized geologic map of Alaska.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain:
+            Correlates with attributes GROUP_ID, GROUP_LABEL, GROUP_LABEL2,
+            and GROUP_NAME.  See Attribute_Domain_Values for GROUP_LABEL2.
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: AKStategeolarc_generalized
+        Entity_Type_Definition:
+          Characteristics of the arc features are coded in the arc attribute table.
+          The table includes the following items:  ARC_CODE and LINE_TYPE.
+        Entity_Type_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: ARC_CODE
+        Attribute_Definition:
+          ARC_CODE is a positive integer value in the arc attribute
+          table.  Values range discontinuously from 4 to 91.  Values
+          match one-for-one with LINE_TYPE.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 4
+            Enumerated_Domain_Value_Definition: Normal fault, location certain
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 5
+            Enumerated_Domain_Value_Definition: Normal fault, location approximate
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 6
+            Enumerated_Domain_Value_Definition: Normal fault, location inferred or queried
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 10
+            Enumerated_Domain_Value_Definition: Thrust fault, location certain; teeth on right from origin
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 11
+            Enumerated_Domain_Value_Definition: Thrust fault, location approximate; teeth on right from origin
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 12
+            Enumerated_Domain_Value_Definition: Thrust fault, location inferred or queried; teeth on right from origin
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 14
+            Enumerated_Domain_Value_Definition: Caldera or crater rim
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 28
+            Enumerated_Domain_Value_Definition: Concealed caldera or crater rim
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 30
+            Enumerated_Domain_Value_Definition: Fault, unknown offset, certain location
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 31
+            Enumerated_Domain_Value_Definition: Fault, unknown offset, approximate location
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 32
+            Enumerated_Domain_Value_Definition: Fault, unknown offset, inferred location
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 35
+            Enumerated_Domain_Value_Definition: High-angle reverse fault, certain location
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 36
+            Enumerated_Domain_Value_Definition: High-angle reverse fault, approximate location
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 37
+            Enumerated_Domain_Value_Definition: High-angle reverse fault, inferred location
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 52
+            Enumerated_Domain_Value_Definition: Concealed normal fault
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 53
+            Enumerated_Domain_Value_Definition: Concealed thrust fault
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 54
+            Enumerated_Domain_Value_Definition: Concealed high-angle reverse fault
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 55
+            Enumerated_Domain_Value_Definition: Concealed normal fault having right lateral oblique slip
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 57
+            Enumerated_Domain_Value_Definition: Concealed right-lateral fault
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 58
+            Enumerated_Domain_Value_Definition: Concealed left-lateral fault
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 60
+            Enumerated_Domain_Value_Definition: Concealed fault of uncertain displacement
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 71
+            Enumerated_Domain_Value_Definition: Normal fault, location certain, having right lateral oblique slip
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 72
+            Enumerated_Domain_Value_Definition: Normal fault, location approximate, having right lateral oblique slip
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 76
+            Enumerated_Domain_Value_Definition: Normal fault, inferred or queried, having right lateral oblique slip
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 87
+            Enumerated_Domain_Value_Definition: Right lateral fault, location certain
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 88
+            Enumerated_Domain_Value_Definition: Right lateral fault, location approximate
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 89
+            Enumerated_Domain_Value_Definition: Right lateral fault, inferred or queried
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 90
+            Enumerated_Domain_Value_Definition: Left lateral fault, location certain
+            Enumerated_Domain_Value_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 91
+            Enumerated_Domain_Value_Definition: Left lateral fault, location approximate
+            Enumerated_Domain_Value_Definition_Source: this data set
+      Attribute:
+        Attribute_Label: LINE_TYPE
+        Attribute_Definition: Description of type of geologic line.
+        Attribute_Definition_Source: this data set
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: Correlates with attribute ARC_CODE.
+  Distribution_Information:
+    Distributor:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: U.S. Geological Survey
+        Contact_Address:
+          Address_Type: mailing address
+          Address: MS902  Box 25286  Denver Federal Center
+          City: Lakewood
+          State_or_Province: CO
+          Postal_Code: 80225
+          Country: U.S.A.
+        Contact_Voice_Telephone: 1-888-ASK-USGS
+    Resource_Description: SIM 3340
+    Distribution_Liability:
+      This publication was prepared by an agency of the United States Government.
+      Neither the United States Government nor any agency thereof, nor any of their
+      employees, makes any warranty, expressed or implied, or assumes any legal
+      liability or responsibility for the accuracy, product, or process disclosed in this
+      report, or represents that its use would not infringe privately owned rights.
+      Reference therein to any specific commercial product, process, or service by
+      trade name, trademark, manufacturer, or otherwise does not necessarily
+      constitute or imply its endorsement, recommendation, or favoring by the
+      United States Government or any agency thereof.
+    Standard_Order_Process:
+      Digital_Form:
+        Digital_Transfer_Information:
+          Format_Name: Vector Digital Data Set (Polygon)
+        Digital_Transfer_Option:
+          Online_Option:
+            Computer_Contact_Information:
+              Network_Address:
+                Network_Resource_Name: http://dx.doi.org/10.3133/sim3340
+                Network_Resource_Name: http://pubs.usgs.gov/sim/3340
+      Fees: None. No fees are applicable for downloading this data set.
+  Metadata_Reference_Information:
+    Metadata_Date: 20151204
+    Metadata_Contact:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: U.S. Geological Survey, Alaska Science Center
+          Contact_Person: Nora B. Shew
+        Contact_Address:
+          Address_Type: mailing address
+          Address: 4210 University Drive
+          City: Anchorage
+          State_or_Province: AK
+          Postal_Code: 99508-4626
+          Country: US
+        Contact_Voice_Telephone: 907-786-7445
+        Contact_Electronic_Mail_Address: nshew@usgs.gov
+    Metadata_Standard_Name: FGDC Content Standard for Digital Geospatial Metadata
+    Metadata_Standard_Version: FGDC-STD-001-1998
