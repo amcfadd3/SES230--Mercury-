@@ -1,12 +1,26 @@
 # Data
 
-Place the project shapefiles in `data/raw/`.
+This folder stores the spatial datasets used for the SES 230 Group Mercury analysis.
 
-Expected raw files:
+## Folder Layout
 
-- `California_Rock_Types.shp` and its companion files, such as `.dbf`, `.shx`, `.prj`, and `.cpg`
-- `CA_EQ_Shallow.shp` and its companion files, such as `.dbf`, `.shx`, `.prj`, and `.cpg`
+- `raw/` - original source data files used by the notebooks and scripts
+- `processed/` - cleaned or generated outputs, if produced during analysis
 
-Generated or cleaned outputs should be saved in `data/processed/`.
+## Expected Raw Data
 
-Large raw datasets may be excluded from GitHub if they are too large to upload. If so, document the source and download instructions here.
+The analysis uses California earthquake point data and California geologic map or rock type polygon data. Shapefiles require multiple companion files to work correctly, so keep each `.shp` file with its matching `.dbf`, `.shx`, `.prj`, `.cpg`, and other related files.
+
+Key expected files include:
+
+- `CA_EQ_Shallow.shp` and companion files
+- `California_Rock_Types.shp` and companion files
+- California geologic map source files, if using the full geologic map workflow
+
+## Data Access Notes
+
+Primary data sources include the USGS earthquake catalog and California Geological Survey geologic map data. If a dataset is too large to store directly in GitHub, place the data in the instructor-provided Dropbox folder and add the access link and download instructions here before final submission.
+
+## Reproducibility Notes
+
+Run the notebooks or `python code/analysis.py` from the repository root so relative paths resolve correctly.

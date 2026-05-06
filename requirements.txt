@@ -1,1 +1,8 @@
-geopandas\nmatplotlib\npandas\nseaborn\nshapely
+geopandas
+ipykernel
+jupyter
+matplotlib
+numpy
+pandas
+seaborn
+shapely
