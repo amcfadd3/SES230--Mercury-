@@ -13,63 +13,73 @@ The data structure and organization process will be facilitated through pandas D
 
 ![][image1]
 
-	Assumptions with our dataset are that the geologic map accurately represents rock type at every earthquake location used. It is also assumed that these simplified rock types are significant to geologic differences within the region where the earthquake occurs.
+*Figure 1. Attribute table for the CA_EQ_Shallow shapefile, showing the earthquake data fields used in the analysis.*
+
+Assumptions with our dataset are that the geologic map accurately represents rock type at every earthquake location used. It is also assumed that these simplified rock types are significant to geologic differences within the region where the earthquake occurs.
 
 ---
-
-# 
 
 # 3\. Code / Methods
 
 ![][image2]
 
-	The creation of this program required the use of a California Earthquake shapefile which contained latitude and longitude data for each earthquake. It also required a shapefile of California geologic units, each being a different polygon. It was necessary to add another column (field) to the geologic units shapefile in order to designate each polygon as sedimentary, igneous, metamorphic, metasedimentary, metavolcanic, and unknown (underwater). After the addition of this field, the files can then be uploaded into the github repository.
+*Figure 2. Flow chart showing the Python workflow used to load shapefiles, perform the spatial join, count earthquakes by rock type, and export results.*
 
-	The first step within the code structure requires the importation of geopandas, pandas, matplotlib, seaborn, and os. Following this a basepath was defined (r"c:**\\E**arthquake\_correlation\_shapefiles"). The next step involved loading the shapefiles using read\_file action. After that, it was necessary to check that both files were using the same coordinate system using quakes \= quakes.to\_crs(rock\_map.crs). Upon the verification of correct coordinate system, the spatial join operation could be completed using the operation: joined \= gpd.sjoin(quakes, rock\_map, how="inner", predicate="within")
+The creation of this program required the use of a California Earthquake shapefile which contained latitude and longitude data for each earthquake. It also required a shapefile of California geologic units, each being a different polygon. It was necessary to add another column (field) to the geologic units shapefile in order to designate each polygon as sedimentary, igneous, metamorphic, metasedimentary, metavolcanic, and unknown (underwater). After the addition of this field, the files can then be uploaded into the github repository.
+
+The first step within the code structure requires the importation of geopandas, pandas, matplotlib, seaborn, and os. Following this a basepath was defined (r"c:**\\E**arthquake\_correlation\_shapefiles"). The next step involved loading the shapefiles using read\_file action. After that, it was necessary to check that both files were using the same coordinate system using quakes \= quakes.to\_crs(rock\_map.crs). Upon the verification of correct coordinate system, the spatial join operation could be completed using the operation: joined \= gpd.sjoin(quakes, rock\_map, how="inner", predicate="within")
 
 Following the spatial join, it is now possible to count the number of earthquakes that occurred in each rock type using: counts \= joined\["Rock\_Type"\].value\_counts(). The results can now be printed, and a data frame can be used to better visualize the results. After that further visualizations can be generated to show the results, including the creation of bar charts within python.
 
-	
-
 ![][image3]
+
+*Figure 3. Map showing shallow California earthquake points overlaid on mapped California rock type polygons.*
 
 [https://arcg.is/5i9590](https://arcg.is/5i9590)
 
-	Data is handled and structured using pandas Data Frames and GeoPandas GeoDataFrames. The Earthquake data is stored as point geometries using the longitude and latitude found in the data and past research. Geologic data is stored as polygon geometries that represent the regions by the three rock types. After these were processed, the merged dataset consists of the table marking epicenter and rock type for that epicenter. The key variables within the code are the longitude and latitude data for  the epicenter and within which region that coordinate lies. The final dataset allows for direct computation of frequency of earthquakes in each kind of region.    
-	The main statistical method for this research is frequency and proportion analysis. This is appropriate as it fits with the hypothesis predicting that likelihood of earthquake occurrence changes by rock type. For spatial analysis, each earthquake point is matched with a type of geological region. This determines which polygon contains what earthquake points. After creating a system that assigns rock type to each epicenter, it is then possible to get a total count of earthquakes per rock type as well as a percentage and proportion of earthquakes in each category. Frequency and proportion analysis is justifiable because it is able to show us relative likelihood. This is not prediction modeling so the data is interpretable and reflects key differences and similarities across the data set in California.   
-	The structure of code was made using Pandas systems and MatPlotLib for visualization and understanding of what this data means. (*Fig. 3\)* With this we have data loading and cleaning, alignment, spatial analysis, aggregation and counting, as well as our main visualization. If this data wanted to be applied and spread to more past research to further analyze the likelihood of earthquakes by rock type, it could easily be reproduced. Data of earthquakes and geological history for that region would have to be found and then it can easily be applied once more. If this were to be done in the future it could further approve or disprove our hypothesis. To validate and test our code we go through error checking. Error checking shows us if earthquakes are successfully assigned a rock type. If it is not we go through to check if that data point may be out of our shapefiles region or if there is a further issue within the code. We also go through synthetic testing to test more simplified datasets at first. We started our research with just the California region earthquakes from 2016-2026. After doing so and approving the data and code, we can assume that this can be reproduced across the board for different regions. Consistency checks are also important to ensure that small data changes or shifts do not affect code and overall distributions. Lastly, as these are all put into place, we make sure that in the end our final data analysis is consistent with already known data and research. If any past research defies our final analysis, we may be able to assume that something could be wrong with the code or how the data sets were combined. Doing so allows us to check back one more time to see whether or not there is any part of the code or data set that needs to be tweaked to reveal the most valid results. ![][image4]
+Data is handled and structured using pandas Data Frames and GeoPandas GeoDataFrames. The Earthquake data is stored as point geometries using the longitude and latitude found in the data and past research. Geologic data is stored as polygon geometries that represent the regions by the three rock types. After these were processed, the merged dataset consists of the table marking epicenter and rock type for that epicenter. The key variables within the code are the longitude and latitude data for the epicenter and within which region that coordinate lies. The final dataset allows for direct computation of frequency of earthquakes in each kind of region.
+
+The main statistical method for this research is frequency and proportion analysis. This is appropriate as it fits with the hypothesis predicting that likelihood of earthquake occurrence changes by rock type. For spatial analysis, each earthquake point is matched with a type of geological region. This determines which polygon contains what earthquake points. After creating a system that assigns rock type to each epicenter, it is then possible to get a total count of earthquakes per rock type as well as a percentage and proportion of earthquakes in each category. Frequency and proportion analysis is justifiable because it is able to show us relative likelihood. This is not prediction modeling so the data is interpretable and reflects key differences and similarities across the data set in California.
+
+The structure of code was made using Pandas systems and MatPlotLib for visualization and understanding of what this data means. (*Fig. 3\)* With this we have data loading and cleaning, alignment, spatial analysis, aggregation and counting, as well as our main visualization. If this data wanted to be applied and spread to more past research to further analyze the likelihood of earthquakes by rock type, it could easily be reproduced. Data of earthquakes and geological history for that region would have to be found and then it can easily be applied once more. If this were to be done in the future it could further approve or disprove our hypothesis. To validate and test our code we go through error checking. Error checking shows us if earthquakes are successfully assigned a rock type. If it is not we go through to check if that data point may be out of our shapefiles region or if there is a further issue within the code or data set that needs to be tweaked to reveal the most valid results.
+
+![][image4]
+
+*Figure 4. Example GeoPandas code and output used to count earthquakes by rock type after the spatial join.*
 
 ---
 
-Results
+# 4\. Results
 
 The analysis utilized a dataset of 13,055 earthquake points within California recorded between April 21, 2016, and April 21, 2026\. Each epicenter was spatially joined with the California Geologic Map to determine the underlying lithology.
 
 ### 4.1 Results
 
- ![][image5]
+![][image5]
 
-# 4.2 Description of Results
+*Figure 5. Earthquake distribution by rock type for the California seismic analysis, showing the percentage of 13,055 earthquakes associated with each rock type.*
 
-# The final analysis of 13,055 shallow earthquakes in California reveals that sedimentary rock units are the primary host for seismic activity (*Fig. 5\)*, accounting for 34.7% of all events. When these are combined with metasedimentary units (24.9%), nearly 60% of the total recorded earthquakes occurred in sedimentary-based lithologies. In contrast, the data has shown the inverse of our hypothesis. Metamorphic rocks represent the least frequent host, containing only 0.9% of the recorded earthquake epicenters, and metaigneous rising to 6.5%, and finally, igneous rocks represented a significant 30.1%.
+## 4.2 Description of Results
 
-# 4.3 Evaluation of Analysis
+The final analysis of 13,055 shallow earthquakes in California reveals that sedimentary rock units are the primary host for seismic activity (*Fig. 5\)*, accounting for 34.7% of all events. When these are combined with metasedimentary units (24.9%), nearly 60% of the total recorded earthquakes occurred in sedimentary-based lithologies. In contrast, the data has shown the inverse of our hypothesis. Metamorphic rocks represent the least frequent host, containing only 0.9% of the recorded earthquake epicenters, and metaigneous rising to 6.5%, and finally, igneous rocks represented a significant 30.1%.
 
-# What worked well: The use of GeoPandas for a spatial join between the USGS epicenter coordinates and the California Geologic Map was highly effective for categorizing large datasets. Filtering the data to include only shallow earthquakes (\<100m depth) and magnitudes of 2.0+ provided a more accurate correlation between surface lithology and seismic activity.
+## 4.3 Evaluation of Analysis
 
-# What did not work: Much of the initial plan did not work. The amount of surface area we intended to cover was far too large for the time frame we had, especially with revising our hypothesis so frequently. Narrowing it down from global (California, Japan, Italy), and filtered by mineral was a job far beyond our scope. After revising it to just US based locations (California, Alaska), we did not have the time needed to complete the Alaska map.  This led to a necessary reduction in scope to focus solely on California.
+What worked well: The use of GeoPandas for a spatial join between the USGS epicenter coordinates and the California Geologic Map was highly effective for categorizing large datasets. Filtering the data to include only shallow earthquakes (\<100m depth) and magnitudes of 2.0+ provided a more accurate correlation between surface lithology and seismic activity.
 
-# Unexpected outcomes: The most significant unexpected outcome was the near-absence of earthquakes in metamorphic rock (0.9%), which contradicted our prediction that these "stiffer" basement rocks would be the most frequent site for shallow seismic nucleation.
+What did not work: Much of the initial plan did not work. The amount of surface area we intended to cover was far too large for the time frame we had, especially with revising our hypothesis so frequently. Narrowing it down from global (California, Japan, Italy), and filtered by mineral was a job far beyond our scope. After revising it to just US based locations (California, Alaska), we did not have the time needed to complete the Alaska map. This led to a necessary reduction in scope to focus solely on California.
 
-# 4.4 Uncertainty and Significance
+Unexpected outcomes: The most significant unexpected outcome was the near-absence of earthquakes in metamorphic rock (0.9%), which contradicted our prediction that these "stiffer" basement rocks would be the most frequent site for shallow seismic nucleation.
 
-# Sources of Uncertainty: The primary source of uncertainty is the 2.9% "Unknown" category, largely consisting of underwater epicenters where lithological data was unavailable. Furthermore, the analysis assumes that surface-mapped geology accurately represents the rock unit at the earthquake hypocenter, even at depths up to 100m.
+## 4.4 Uncertainty and Significance
 
-# Evaluation: Despite these factors, the results are highly meaningful. The 33.8% gap between the most frequent host (sedimentary) and the least frequent (metamorphic) is statistically significant and indicates a clear lithological preference for shallow seismic events in this region.
+Sources of Uncertainty: The primary source of uncertainty is the 2.9% "Unknown" category, largely consisting of underwater epicenters where lithological data was unavailable. Furthermore, the analysis assumes that surface-mapped geology accurately represents the rock unit at the earthquake hypocenter, even at depths up to 100m.
 
-# 
+Evaluation: Despite these factors, the results are highly meaningful. The 33.8% gap between the most frequent host (sedimentary) and the least frequent (metamorphic) is statistically significant and indicates a clear lithological preference for shallow seismic events in this region.
 
-5.1 Hypothesis Evaluation
+# 5\. Discussion
+
+## 5.1 Hypothesis Evaluation
 
 The project's hypothesis underwent four significant revisions as the team encountered technical challenges, computational limits, and new scientific data.
 
@@ -78,7 +88,7 @@ The project's hypothesis underwent four significant revisions as the team encoun
 3. Third Hypothesis: The team simplified the scope to predicting that earthquake epicenters are more likely to occur in primarily metamorphic regions than in igneous or sedimentary regions. We revised our area of study to California and, optimistically, Alaska due to data accessibility.  
 4. Fourth Hypothesis: To improve the correlation between surface geology and epicenter data, a final depth constraint was added: "Earthquakes within 100m of the surface are more likely in metamorphic units" This ensured the results were as accurate as possible by matching hypocenters to the specific surface geology recorded on national maps.
 
-5.2 Scientific Interpretation  
+## 5.2 Scientific Interpretation  
 The results identifying sedimentary rock units as the primary host for shallow earthquakes in California, can be interpreted through a combination of mineralogical composition and the mechanical properties of the upper crust (Johnson et al. 2017).  
 A primary factor for this high seismic frequency is the presence of hard minerals within California's sedimentary sequences. According to Sathyanath & Sharma (2025), lithologies containing harder minerals, such as quartz, are associated with higher magnitude stick-slip events and greater elastic deformation. The geologic map of California confirms that the sedimentary units in the study area are predominantly sandstone, a rock type composed primarily of quartz and feldspar (Wu et al. 2013).This high quartz content likely increases the friction coefficient and rock strength, leading to the accumulation of higher stress levels that result in more frequent and detectable earthquake events.  
 The concentration of earthquakes within the top 100m of the crust is further explained by the brittle nature of rocks at shallow depths (Johnson et al. 2017). Brittle deformation occurs when applied stress exceeds the internal strength of the rock, a process favored at high stress and the low pressure-temperature conditions characteristic of the upper crust (Brittle Deformation) . Unlike the deeper crust where rocks may exhibit ductile flow, the shallowest layers are prone to fracturing, creating the epicenters recorded in our dataset (Wu et al. 2013).  
@@ -93,7 +103,7 @@ A data limitation which altered the hypothesis was the fact that although many e
 
 ---
 
-5.4 Key Findings
+## 5.4 Key Findings
 
 * Dominance of Sedimentary Lithology: Spatial analysis of 13,055 shallow earthquakes in California identified sedimentary rock as the primary host for seismic activity, accounting for 34.7% of all recorded events. When combined with metasedimentary units (24.9%), nearly 60% of the seismic activity occurred within sedimentary-based sequences.  
 * Rejection of the Metamorphic Hypothesis: The data explicitly disproved the project's final hypothesis, predicting metamorphic units would be the most frequent site for shallow seismic nucleation. Instead, metamorphic rocks were the least frequent host, containing only 0.9% of the recorded epicenters. This does not account for metasedimentary host rocks.  
@@ -117,8 +127,9 @@ The results disproved the project's final hypothesis, which predicted that metam
 
 ## Objectives
 
-	In order to further extend the project, the next steps would be to look at data from other regions or to find data from rocks at the depth of which the earthquakes occur. The first way to extend the project would be to do a similar process already done but with new regions. For the data section, only shallow earthquakes of new regions would be used, which would mean finding a reliable source of earthquake data of that new region. Then we would need to find a geologic map of that new region to overlay the shallow earthquakes and lithology. If we were to instead focus on further researching the current area used in the project, California, one aspect would be not just focusing on shallow earthquakes, but to trying to extend the data to deeper earthquakes. Because we already have the seismic data of earthquakes deeper than 100m, the challenge would be to figure out what the lithology would be at that depth.   
-	For future work, a suggestion could be to use drilling in order to figure out the rocks which are at specific depths, then analyzing earthquakes at that depth to see if there is a correlation between the rock type and amount of earthquakes at depth.   
+In order to further extend the project, the next steps would be to look at data from other regions or to find data from rocks at the depth of which the earthquakes occur. The first way to extend the project would be to do a similar process already done but with new regions. For the data section, only shallow earthquakes of new regions would be used, which would mean finding a reliable source of earthquake data of that new region. Then we would need to find a geologic map of that new region to overlay the shallow earthquakes and lithology. If we were to instead focus on further researching the current area used in the project, California, one aspect would be not just focusing on shallow earthquakes, but to trying to extend the data to deeper earthquakes. Because we already have the seismic data of earthquakes deeper than 100m, the challenge would be to figure out what the lithology would be at that depth.
+
+For future work, a suggestion could be to use drilling in order to figure out the rocks which are at specific depths, then analyzing earthquakes at that depth to see if there is a correlation between the rock type and amount of earthquakes at depth.
 ---
 
 # 8\. Credits and Contributions
@@ -196,7 +207,7 @@ C., & Violay, M. (2021). Brittle faulting of ductile rock induced by pore fluid 
 
 ## 8.3 AI Use Disclosure
 
-	AI tools (e.g. ChatGPT, Gemini, etc.) were used in this project to assist with coding and error-check problem solving. These tools were also used to create outlines, example visualizations, and guides for project flow. Clarification and improving workflow were clarified using AI.
+AI tools (e.g. ChatGPT, Gemini, etc.) were used in this project to assist with coding and error-check problem solving. These tools were also used to create outlines, example visualizations, and guides for project flow. Clarification and improving workflow were clarified using AI.
 
 All analysis, interpretation, final reports, text within slides, etc. was not generated by AI. Final report text and conclusion were also not generated by AI. 
 
