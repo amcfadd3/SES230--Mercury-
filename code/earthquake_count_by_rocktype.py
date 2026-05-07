@@ -1,81 +1,78 @@
-# Earthquake Count by Rock Type Analysis
-# This script performs spatial analysis of earthquakes by rock type
+"""Earthquake count by rock type analysis.
+
+Run from the repository root with:
+
+    python code/earthquake_count_by_rocktype.py
+"""
+
+from pathlib import Path
 
 import geopandas as gpd
-import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-import os
+import pandas as pd
 
-# Define the base path
-base_path = r"c:\Earthquake_correlation_shapefiles"
 
-# Load the shapefiles
-rock_map = gpd.read_file(os.path.join(base_path, "California_Rock_Types.shp"))
-quakes = gpd.read_file(os.path.join(base_path, "CA_EQ_Shallow.shp"))
+def find_project_root(start: Path | None = None) -> Path:
+    """Find the repository root by locating the data/raw folder."""
+    start = Path.cwd().resolve() if start is None else start.resolve()
+    for path in [start, *start.parents]:
+        if (path / "data" / "raw").exists():
+            return path
+    raise FileNotFoundError("Could not find a project root containing data/raw.")
 
-print("Shapefiles loaded successfully!")
-print(f"Rock Types shapefile: {len(rock_map)} polygons")
-print(f"CA_EQ_Shallow shapefile: {len(quakes)} earthquakes")
 
-# Ensure both shapefiles have the same CRS
-quakes = quakes.to_crs(rock_map.crs)
+PROJECT_ROOT = find_project_root()
+RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw"
+FIGURES_DIR = PROJECT_ROOT / "figures"
+FIGURES_DIR.mkdir(exist_ok=True)
 
-print(f"\nCRS synchronized: {quakes.crs}")
+ROCK_TYPES_PATH = RAW_DATA_DIR / "California_Rock_Types.shp"
+EARTHQUAKES_PATH = RAW_DATA_DIR / "CA_EQ_Shallow.shp"
 
-# Perform spatial join - find which rock type each earthquake is within
-joined = gpd.sjoin(quakes, rock_map, how="inner", predicate="within")
 
-print(f"\nTotal earthquakes matched to rock types: {len(joined)}")
+def main() -> None:
+    rock_map = gpd.read_file(ROCK_TYPES_PATH)
+    quakes = gpd.read_file(EARTHQUAKES_PATH)
 
-# Count earthquakes by rock type
-counts = joined["Rock_Type"].value_counts()
+    print("Shapefiles loaded successfully.")
+    print(f"Rock type polygons: {len(rock_map):,}")
+    print(f"Earthquake points: {len(quakes):,}")
 
-print("\nEarthquake Count by Rock Type:")
-print("=" * 50)
-print(counts)
-print("=" * 50)
+    quakes = quakes.to_crs(rock_map.crs)
+    rock_map_clean = rock_map[["Rock_Type", "geometry"]].copy()
+    joined = gpd.sjoin(quakes, rock_map_clean, how="inner", predicate="within")
 
-# Create a DataFrame for better visualization
-counts_df = pd.DataFrame({
-    'Rock_Type': counts.index,
-    'Count': counts.values,
-    'Percentage': (counts.values / counts.sum() * 100).round(2)
-})
+    rock_column = "Rock_Type_right" if "Rock_Type_right" in joined.columns else "Rock_Type"
+    counts = joined[rock_column].value_counts().sort_values(ascending=False)
 
-print("\nDetailed Statistics:")
-print(counts_df.to_string(index=False))
+    summary = pd.DataFrame(
+        {
+            "Rock Type": counts.index,
+            "Count": counts.values,
+            "Percentage": (counts.values / counts.sum() * 100).round(2),
+        }
+    )
 
-# Create visualizations
-fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+    print("\nEarthquake Count by Rock Type")
+    print("=" * 50)
+    print(summary.to_string(index=False))
+    print("=" * 50)
+    print(f"Total earthquakes in input shapefile: {len(quakes):,}")
+    print(f"Earthquakes matched to rock types: {len(joined):,}")
 
-# Bar chart
-axes[0].bar(counts_df['Rock_Type'], counts_df['Count'], color='steelblue', alpha=0.7, edgecolor='black')
-axes[0].set_xlabel('Rock Type', fontsize=12, fontweight='bold')
-axes[0].set_ylabel('Earthquake Count', fontsize=12, fontweight='bold')
-axes[0].set_title('Earthquake Count by Rock Type', fontsize=14, fontweight='bold')
-axes[0].tick_params(axis='x', rotation=45)
-axes[0].grid(True, alpha=0.3, axis='y')
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.bar(summary["Rock Type"], summary["Count"], color="#4c78a8", edgecolor="black")
+    ax.set_title("Earthquake Count by Rock Type")
+    ax.set_xlabel("Rock Type")
+    ax.set_ylabel("Earthquake Count")
+    ax.tick_params(axis="x", rotation=35)
+    ax.grid(axis="y", alpha=0.3)
+    plt.tight_layout()
 
-# Pie chart
-colors = plt.cm.Set3(range(len(counts_df)))
-axes[1].pie(counts_df['Count'], labels=counts_df['Rock_Type'], autopct='%1.1f%%', 
-            colors=colors, startangle=90)
-axes[1].set_title('Earthquake Distribution by Rock Type', fontsize=14, fontweight='bold')
+    output_path = FIGURES_DIR / "earthquake_count_by_rock_type.png"
+    plt.savefig(output_path, dpi=300, bbox_inches="tight")
+    print(f"Saved figure to {output_path.relative_to(PROJECT_ROOT)}")
 
-plt.tight_layout()
-plt.savefig(os.path.join(base_path, "Code", "Earthquake_Count_by_Rock_Type.png"), dpi=300, bbox_inches='tight')
-plt.show()
 
-print("\nVisualization saved as 'Earthquake_Count_by_Rock_Type.png'")
-
-# Additional analysis: Summary statistics
-print("\n" + "=" * 50)
-print("SUMMARY STATISTICS")
-print("=" * 50)
-print(f"Total earthquakes: {len(quakes)}")
-print(f"Earthquakes in mapped rock types: {len(joined)}")
-print(f"Earthquakes not in mapped areas: {len(quakes) - len(joined)}")
-print(f"Coverage: {(len(joined) / len(quakes) * 100):.2f}%")
-print(f"\nMost common rock type: {counts_df.iloc[0]['Rock_Type']} ({counts_df.iloc[0]['Count']} earthquakes)")
-print(f"Least common rock type: {counts_df.iloc[-1]['Rock_Type']} ({counts_df.iloc[-1]['Count']} earthquakes)")
+if __name__ == "__main__":
+    main()

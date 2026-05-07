@@ -6,7 +6,7 @@
 - [x] Raw data are organized under `data/raw/`
 - [x] Processed data folder exists at `data/processed/`
 - [x] Zotero export is included under `zotero/`
-- [x] Final report is included as Markdown
+- [x] Final report text, figures, and code are included in a single Jupyter notebook
 - [x] Figures used in the report are stored under `figures/`
 - [x] Code and supporting notebooks are stored under `code/`
 - [ ] Notebook has been run from start to finish on a clean machine

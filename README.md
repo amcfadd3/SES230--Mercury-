@@ -27,8 +27,7 @@ This project investigates the relationship between shallow California earthquake
 - `README.md` - project overview and reproduction instructions
 - `LICENSE` - open-source license
 - `requirements.txt` - Python dependencies
-- `SES230_GroupMercury_FinalReport.md` - final report in Markdown format
-- `SES230_GroupMercury_FinalReport.ipynb` - project notebook
+- `SES230_GroupMercury_FinalReport.ipynb` - single final report notebook containing the report text, figures, and reproducible code
 - `code/` - analysis scripts and supporting notebooks
 - `data/raw/` - raw spatial datasets used in the analysis
 - `data/processed/` - processed outputs, if generated
@@ -51,7 +50,7 @@ The project uses Python with GeoPandas, pandas, NumPy, Matplotlib, Seaborn, and 
 1. Clone or download this repository.
 2. Install the dependencies listed in `requirements.txt`.
 3. Confirm that the required data files are available under `data/raw/`.
-4. Open `SES230_GroupMercury_FinalReport.ipynb` or the notebooks in `code/`.
+4. Open `SES230_GroupMercury_FinalReport.ipynb`.
 5. Run the notebook cells from top to bottom.
 
 The main reusable Python workflow can also be run with:
