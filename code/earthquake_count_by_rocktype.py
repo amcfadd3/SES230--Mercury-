@@ -52,8 +52,8 @@ def main() -> None:
     rock_map_clean = rock_map[["Rock_Type", "geometry"]].copy()
     joined = gpd.sjoin(quakes, rock_map_clean, how="inner", predicate="within")
 
-    # Simplified column access (always "Rock_Type_right" for inner join)
-    counts = joined["Rock_Type_right"].value_counts().sort_values(ascending=False)
+rock_column = "Rock_Type_right" if "Rock_Type_right" in joined.columns else "Rock_Type"
+    counts = joined[rock_column].value_counts().sort_values(ascending=False)
 
     summary = pd.DataFrame(
         {
