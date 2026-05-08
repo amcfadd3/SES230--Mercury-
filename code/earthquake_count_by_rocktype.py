@@ -31,19 +31,29 @@ EARTHQUAKES_PATH = RAW_DATA_DIR / "CA_EQ_Shallow.shp"
 
 
 def main() -> None:
-    rock_map = gpd.read_file(ROCK_TYPES_PATH)
-    quakes = gpd.read_file(EARTHQUAKES_PATH)
+    try:
+        rock_map = gpd.read_file(ROCK_TYPES_PATH)
+        quakes = gpd.read_file(EARTHQUAKES_PATH)
+    except Exception as e:
+        print(f"Error loading shapefiles: {e}")
+        return
 
     print("Shapefiles loaded successfully.")
     print(f"Rock type polygons: {len(rock_map):,}")
     print(f"Earthquake points: {len(quakes):,}")
 
-    quakes = quakes.to_crs(rock_map.crs)
+    # Validate and convert CRS
+    if quakes.crs != rock_map.crs:
+        print(f"Converting quakes CRS from {quakes.crs} to {rock_map.crs}")
+        quakes = quakes.to_crs(rock_map.crs)
+    else:
+        print("CRS already matches.")
+
     rock_map_clean = rock_map[["Rock_Type", "geometry"]].copy()
     joined = gpd.sjoin(quakes, rock_map_clean, how="inner", predicate="within")
 
-    rock_column = "Rock_Type_right" if "Rock_Type_right" in joined.columns else "Rock_Type"
-    counts = joined[rock_column].value_counts().sort_values(ascending=False)
+    # Simplified column access (always "Rock_Type_right" for inner join)
+    counts = joined["Rock_Type_right"].value_counts().sort_values(ascending=False)
 
     summary = pd.DataFrame(
         {
