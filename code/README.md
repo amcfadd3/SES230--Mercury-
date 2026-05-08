@@ -8,6 +8,5 @@ This folder contains scripts and notebooks that support the earthquake and rock 
 - `Earthquake_Count_by_RockType_Clean.ipynb` - cleaned notebook version of the rock type count analysis
 - `CA_EQ_Shallow_Attribute_Analysis.ipynb` - notebook for exploring CA_EQ_Shallow earthquake attributes
 - `CA_EQ_Shallow_Attribute_Analysis_original.ipynb` - original attribute analysis notebook kept for reference
-- `temp_notebook.ipynb` - temporary/intermediate notebook retained for project history
 
 Run scripts from the repository root so relative paths such as `data/raw/` work correctly.
